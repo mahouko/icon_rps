@@ -1,22 +1,9 @@
+body {
+  background-color:rgb(69, 69, 69);
+  color: rgb(247, 214, 70);
+}
 #game {
   font-size: 3.1em;
-  float: left;
-  width: 100%;
-  height: 100%;
-}
-#game .fa {
-  position: absolute;
-  clear: both;
-}
-#player-paper {
-  top: 240px;
-}
-#player-scissors {
-  top: 460px;
-}
-.ai-hand {
-  left: 400px;
-  top: 241px;
 }
 .is-hidden {
   display: none;
