@@ -14,7 +14,7 @@ $(document).ready(function() {
   }
 
   $(".player-hand").click(function(){
-    $("#game").innerHTML("<i id=\"ai-paper\" class=\"fa fa-hand-paper-o fa-5x rotate-270-flip ai-hand is-hidden\" aria-hidden=\"true\"></i>")
+    // $("#game").html("<i id=\"ai-paper\" class=\"fa fa-hand-paper-o fa-5x rotate-270-flip ai-hand is-hidden\" aria-hidden=\"true\"></i>")
     makeAiChoice();
   });
 });
