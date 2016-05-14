@@ -1,3 +1,22 @@
+.throw {
+  font-size: 3.1em;
+  float: left;
+}
+#player-throw {
+}
+#ai-throw {
+  margin-left: 550px;
+}
+#player-throw .fa {
+  display: block;
+  clear: both;
+}
+#ai-throw .fa {
+  float: left;
+  margin-top: 241px;
+}
+
+
 .is-hidden {
   display: none;
   visibility: hidden;
@@ -6,23 +25,6 @@
 .is-hidden::before {
   display: none;
 }
-.fa {
-  float: left;
-}
-.fa-20x {
-  font-size: 20em;
-  width: 0;
-}
-
-.throw {
-  font-size: 5em;
-}
-
-#ai-throw {
-  width: 33%;
-  margin: 1em auto;
-}
-
 .rotate-270-flip {
   -ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=3) progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
   -webkit-transform:rotate(270deg) scale(-1, 1);
