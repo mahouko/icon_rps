@@ -1,3 +1,10 @@
+body {
+  background-color:rgb(69, 69, 69);
+  color: rgb(247, 214, 70);
+}
+#game {
+  font-size: 3.1em;
+}
 .is-hidden {
   display: none;
   visibility: hidden;
@@ -6,41 +13,15 @@
 .is-hidden::before {
   display: none;
 }
-.fa {
-  float: left;
-}
-.fa-20x {
-  font-size: 20em;
-  width: 0;
-}
-
-.throw {
-  font-size: 5em;
-}
-
-#ai-throw {
-  width: 33%;
-  margin: 1em auto;
-}
-
 .rotate-270-flip {
   -ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=3) progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
   -webkit-transform:rotate(270deg) scale(-1, 1);
   -ms-transform:rotate(270deg) scale(-1, 1);
   transform:rotate(270deg) scale(-1, 1);  
 }
-
 .rotate-180-flip {
   -ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=2) progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
   -webkit-transform:rotate(180deg) scale(1, -1);
   -ms-transform:rotate(180deg) scale(1, -1);
   transform:rotate(180deg) scale(1, -1);  
 }
-
-/*#line {
-  position: relative;
-  float: left;
-  line-height: 400px;
-  background-color: black;
-  left: 475px;
-}*/
