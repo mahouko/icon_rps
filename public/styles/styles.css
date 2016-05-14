@@ -16,6 +16,9 @@ body {
   width: 40%;
   margin: 0 auto;
 }
+#input .fa:hover {
+  color: #4667F7;
+}
 #ai-choice {
   color: #f7d646;
 }
