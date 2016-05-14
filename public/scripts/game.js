@@ -10,6 +10,7 @@ $(document).ready(function() {
   var playerScissors ="<i id=\"input-scissors\" class=\"fa fa-hand-scissors-o fa-5x rotate-180-flip player-hand\" aria-hidden=\"true\"></i>"
   var winSymbol ="<i class=\"fa fa-check\" aria-hidden=\"true\"></i>"
   var loseSymbol ="<i class=\"fa fa-times\" aria-hidden=\"true\"></i>"
+  var tieSymbol ="<i class=\"fa fa-repeat\" aria-hidden=\"true\"></i>"
 
   function makeAiChoice(){
     aiChoice = Math.floor(Math.random() * 3);
@@ -33,14 +34,16 @@ $(document).ready(function() {
   }
 
   function determineResult(){
-    resultCode=(playerChoice - aiChoice) % 3
+    resultCode=(3+playerChoice - aiChoice) % 3
     if (resultCode==0) {
+      $("#player-result").html(tieSymbol)
+      $("#ai-result").html(tieSymbol)
     } else if (resultCode==1) {
       $("#player-result").html(winSymbol)
-      // $("#ai-result").html(loseSymbol)
+      $("#ai-result").html(loseSymbol)
     } else if (resultCode==2) {
       $("#player-result").html(loseSymbol)
-      // $("#ai-result").html(winSymbol)
+      $("#ai-result").html(winSymbol)
 
     }
 
