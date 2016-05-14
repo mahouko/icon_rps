@@ -15,8 +15,6 @@
   float: left;
   margin-top: 241px;
 }
-
-
 .is-hidden {
   display: none;
   visibility: hidden;
@@ -31,18 +29,9 @@
   -ms-transform:rotate(270deg) scale(-1, 1);
   transform:rotate(270deg) scale(-1, 1);  
 }
-
 .rotate-180-flip {
   -ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=2) progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
   -webkit-transform:rotate(180deg) scale(1, -1);
   -ms-transform:rotate(180deg) scale(1, -1);
   transform:rotate(180deg) scale(1, -1);  
 }
-
-/*#line {
-  position: relative;
-  float: left;
-  line-height: 400px;
-  background-color: black;
-  left: 475px;
-}*/
