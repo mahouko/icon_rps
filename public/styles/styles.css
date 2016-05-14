@@ -1,3 +1,32 @@
+.is-hidden {
+  display: none;
+  visibility: hidden;
+  position: relative;
+}
 .is-hidden::before {
   display: none;
 }
+.fa {
+  float: left;
+}
+.fa-20x {
+  font-size: 20em;
+  width: 0;
+}
+
+.throw {
+  font-size: 5em;
+}
+
+#ai-throw {
+  width: 33%;
+  margin: 1em auto;
+}
+
+/*#line {
+  position: relative;
+  float: left;
+  line-height: 400px;
+  background-color: black;
+  left: 475px;
+}*/
