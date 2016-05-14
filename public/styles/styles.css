@@ -5,6 +5,9 @@ body {
 #game {
   font-size: 3.1em;
 }
+.ai-hand {
+  float: right;
+}
 .is-hidden {
   display: none;
   visibility: hidden;
