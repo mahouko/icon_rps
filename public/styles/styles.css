@@ -1,6 +1,6 @@
 body {
-  background-color:rgb(69, 69, 69);
-  color: rgb(247, 214, 70);
+  background-color: #454545;
+  color: #4667F7;
 }
 #game {
   font-size: 3.1em;
@@ -9,9 +9,15 @@ body {
   float: left;
 }
 #input {
-  position: absolute;
-  top: 500px;
-  left: 23%;
+  color: #6a6a6a;
+  float: none;
+  clear: both;
+  font-size: .7em;
+  width: 40%;
+  margin: 0 auto;
+}
+#ai-choice {
+  color: #f7d646;
 }
 .ai-hand {
   float: right;
