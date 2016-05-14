@@ -5,6 +5,14 @@ body {
 #game {
   font-size: 3.1em;
 }
+#player-choice {
+  float: left;
+}
+#input {
+  position: absolute;
+  top: 500px;
+  left: 23%;
+}
 .ai-hand {
   float: right;
 }
@@ -27,9 +35,4 @@ body {
   -webkit-transform:rotate(180deg) scale(1, -1);
   -ms-transform:rotate(180deg) scale(1, -1);
   transform:rotate(180deg) scale(1, -1);
-}
-#input {
-  position: absolute;
-  top: 200px;
-  left: 26%;
 }
