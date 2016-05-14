@@ -1,19 +1,22 @@
-.throw {
+#game {
   font-size: 3.1em;
   float: left;
+  width: 100%;
+  height: 100%;
 }
-#player-throw {
-}
-#ai-throw {
-  margin-left: 550px;
-}
-#player-throw .fa {
-  display: block;
+#game .fa {
+  position: absolute;
   clear: both;
 }
-#ai-throw .fa {
-  float: left;
-  margin-top: 241px;
+#player-paper {
+  top: 240px;
+}
+#player-scissors {
+  top: 460px;
+}
+.ai-hand {
+  left: 400px;
+  top: 241px;
 }
 .is-hidden {
   display: none;
