@@ -1,12 +1,13 @@
 /*
  * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
+ * https://gist.github.com/marcobarbosa/798569
  */
 @import "base.css";
 @import "common.css";
 @import "inputs.css";
 @import "results.css";
 @import "jazz_hands.css";
-@import "phone_p.css" screen and (min-width: 1px) and (max-width: 320px);
-@import "phone_l.css" screen and (min-width: 321px) and (max-width: 1223px);
+@import "phone_p.css" screen and (max-width: 479px);
+@import "phone_l.css" screen and (min-width: 480px) and (max-width: 1223px);
 @import "monitor.css" screen and (min-width: 1224px);
 /*@import "large_screen.css" only screen and (min-width : 1824px);*/
