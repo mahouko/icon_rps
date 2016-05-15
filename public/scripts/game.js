@@ -107,27 +107,9 @@ $(document).ready(function() {
     return Math.floor((x - (x % n))/n)
   }
 
-  $("#input-rock").click(function(e){
+  $(".player-input").click(function(e){
     if(canThrow) {
       playerChoice=0
-      displayPlayerChoice()
-      makeAiChoice();
-      doThrows();
-      determineResult();
-    }
-  });
-  $("#input-paper").click(function(){
-    if(canThrow) {
-      playerChoice=1
-      displayPlayerChoice()
-      makeAiChoice();
-      doThrows();
-      determineResult();
-    }
-  });
-  $("#input-scissors").click(function(){
-    if(canThrow) {
-      playerChoice=2
       displayPlayerChoice()
       makeAiChoice();
       doThrows();
