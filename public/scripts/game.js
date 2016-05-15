@@ -109,7 +109,7 @@ $(document).ready(function() {
 
   $(".player-input").click(function(e){
     if(canThrow) {
-      playerChoice=0
+      playerChoice=$(e.target).data("throw-id")
       displayPlayerChoice()
       makeAiChoice();
       doThrows();
