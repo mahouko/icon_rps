@@ -13,7 +13,6 @@
 #input .fa {
   transition: color .3s ease-out;
   color: #6a6a6a;
-  /*float: left;*/
 }
 #input .fa:hover {
   transition: color .2s ease-out;

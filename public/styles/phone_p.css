@@ -8,3 +8,15 @@ a, a:visited {
 
 #throws {
 }
+
+/*--------------
+  Animations
+--------------*/
+.player-throw {
+  transition: padding-left .13s ease-in;
+  padding-left: 300%;
+}
+.ai-throw {
+  transition: padding-right .13s ease-in;
+  padding-right: 100%;
+}
