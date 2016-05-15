@@ -7,7 +7,7 @@
 @import "inputs.css";
 @import "results.css";
 @import "jazz_hands.css";
-@import "phone_p.css" screen and (max-width: 479px);
-@import "phone_l.css" screen and (min-width: 480px) and (max-width: 1223px);
+@import "phone_p.css" screen and (max-width: 1223px) and (orientation: portrait);
+@import "phone_l.css" screen and (max-width: 1223px) and (orientation: landscape);
 @import "monitor.css" screen and (min-width: 1224px);
 /*@import "large_screen.css" only screen and (min-width : 1824px);*/
