@@ -1,0 +1,31 @@
+body {
+  background-color: #454545;
+  color: white;
+  font-family: "Arvo", sans;
+  font-size: 100%;
+}
+#title {
+  font-size: 22px;
+}
+h1, h2 {
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+a, a:visited {
+  color: white;
+}
+a:hover {
+  color: #6a6a6a;
+}
+#footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2em;
+  width: 97%;
+  font-size: 22px;
+  text-align: right;
+  padding: 0 1em;
+}

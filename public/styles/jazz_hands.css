@@ -1,3 +1,23 @@
+/*------------------
+  Throw Animation
+------------------*/
+.player-throw {
+  transition: padding-left .13s ease-in;
+  padding-left: 20%;
+}
+.ai-throw {
+  transition: padding-right .13s ease-in;
+  padding-right: 20%;
+}
+.player-return {
+  transition: padding-left .45s ease-in-out;
+  padding-left: 0;
+}
+.ai-return {
+  transition: padding-right .45s ease-in-out;
+  padding-right: 0;
+}
+
 /* safari and chrome */
 @-webkit-keyframes player-wiggle {
 	0% {-webkit-transform:rotate(86deg);}

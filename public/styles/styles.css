@@ -1,8 +1,10 @@
 /*
  * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
  */
+@import "base.css";
 @import "common.css";
-@import "colors.css";
+@import "inputs.css";
+@import "results.css";
 @import "jazz_hands.css";
 @import "phone_p.css" only screen and (max-device-width: 320px);
 /*@import "phone_l.css" only screen and (min-width : 321px);*/

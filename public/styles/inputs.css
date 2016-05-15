@@ -1,0 +1,24 @@
+/*------------------
+  Input
+------------------*/
+#input {
+  color: #6a6a6a;
+  float: none;
+  clear: both;
+  width: 450px;
+  margin: 0 auto;
+  padding-top: 90px;
+}
+#input .fa {
+  transition: color .3s ease-out;
+  color: #6a6a6a;
+}
+#input .fa:hover {
+  transition: color .2s ease-out;
+  color: #4667f7;
+}
+/*Animations*/
+@keyframes highlightChoice {
+  from{ color: #6a6a6a; }
+  to{ color: #4667F7; }
+}
