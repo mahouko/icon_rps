@@ -10,9 +10,9 @@
 --------------*/
 .player-throw {
   transition: padding-left .13s ease-in;
-  padding-left: 33%;
+  padding-left: 25%;
 }
 .ai-throw {
   transition: padding-right .13s ease-in;
-  padding-right: 33%;
+  padding-right: 25%;
 }
