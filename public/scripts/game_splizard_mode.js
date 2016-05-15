@@ -35,9 +35,9 @@ $(document).ready(function() {
     } else if (aiChoice==2) {
       $("#ai-choice").html(scissors);
     } else if (aiChoice==3) {
-      $("#ai-choice").html(lizard);
-    } else if (aiChoice==4) {
       $("#ai-choice").html(spock);
+    } else if (aiChoice==4) {
+      $("#ai-choice").html(lizard);
     }
   }
 
@@ -49,9 +49,9 @@ $(document).ready(function() {
     } else if (playerChoice==2) {
       $("#player-choice").html(playerScissors);
     } else if (playerChoice==3) {
-      $("#player-choice").html(playerLizard);
-    } else if (playerChoice==4) {
       $("#player-choice").html(playerSpock);
+    } else if (playerChoice==4) {
+      $("#player-choice").html(playerLizard);
     }
   }
 
@@ -79,15 +79,15 @@ $(document).ready(function() {
   }
 
   function determineResult(){
-    resultCode=(3+playerChoice - aiChoice) % 3
+    resultCode=(5+playerChoice - aiChoice) % 5
     if (resultCode==0) {
       $("#player-result").html(tieSymbol)
       $("#ai-result").html(tieSymbol)
-    } else if (resultCode==1) {
+    } else if (resultCode%2==1) {
       $("#player-result").html(winSymbol)
       $("#ai-result").html(loseSymbol)
       playerScore++
-    } else if (resultCode==2) {
+    } else if (resultCode%2==0) {
       $("#player-result").html(loseSymbol)
       $("#ai-result").html(winSymbol)
       aiScore++
