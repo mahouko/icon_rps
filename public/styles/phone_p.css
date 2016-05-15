@@ -1,13 +1,10 @@
-a, a:visited {
-  color: red;
-}
 #game {
-  font-size: 200%;
+  font-size: 150%;
   width: 85%;
 }
 
 #input {
-  padding-top: 400px;
+  /*padding-top: 400px;*/
 }
 
 #throws {

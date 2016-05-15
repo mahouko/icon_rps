@@ -5,10 +5,15 @@
   color: #6a6a6a;
   float: none;
   clear: both;
-  /*width: 23%;*/
-  /*margin: 0 auto;*/
   text-align: center;
-  padding-top: 90px;
+  /*padding-top: 90px;*/
+}
+#input-wrapper {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 97%;
+  padding: 0 1em;
 }
 #input .fa {
   transition: color .3s ease-out;
