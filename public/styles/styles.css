@@ -1,6 +1,19 @@
 body {
   background-color: #454545;
-  color: #4667F7;
+  color: white;
+  font-family: "Arvo", sans;
+}
+#title {
+  font-size: 22px;
+}
+h1, h2 {
+  color: white;
+}
+.wrapper {
+  width: 60%;
+  margin: 0 auto;
+  color: #888888;
+  font-size: 32px;
 }
 #game {
   padding: 1em;
@@ -16,12 +29,17 @@ body {
   clear: both;
   display: block;
   padding-top: 2em;
+  margin: 0 auto;
+  width: 95%;
 }
 #player-choice {
   float: left;
 }
 #ai-choice {
   color: #f7d646;
+}
+.player-hand {
+  color: #4667f7;
 }
 .ai-hand {
   float: right;
@@ -35,9 +53,9 @@ body {
   color: #6a6a6a;
   float: none;
   clear: both;
-  width: 525px;
+  width: 450px;
   margin: 0 auto;
-  padding-top: 60px;
+  padding-top: 90px;
 }
 #input .fa {
   transition: color .3s ease-out;
@@ -68,11 +86,11 @@ body {
 @media (min-width: 1200px) {
   .player-throw {
     transition: padding-left .22s ease-in;
-    padding-left: 36%;
+    padding-left: 35%;
   }
   .ai-throw {
     transition: padding-right .22s ease-in;
-    padding-right: 36%;
+    padding-right: 35%;
   }
 }
 
@@ -139,6 +157,25 @@ body {
 /*------------------
   Other
 ------------------*/
+#footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2em;
+  width: 97%;
+  font-size: 22px;
+  text-align: right;
+  padding: 0 1em;
+}
+a {
+  text-decoration: none;
+}
+a, a:visited {
+  color: white;
+}
+a:hover {
+  color: #6a6a6a;
+}
 .is-hidden {
   display: none;
   visibility: hidden;

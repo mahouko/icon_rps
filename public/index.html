@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>morganlaco.com</title>
+    <title>Font Awesome RPS</title>
     <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-aNUYGqSUL9wG/vP7+cWZ5QOM4gsQou3sBfWRr/8S3R1Lv0rysEmnwsRKMbhiQX/O" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
@@ -10,6 +10,15 @@
 
   </head>
   <body>
+    <div id="title">
+      <a href="/">
+        <i class="fa fa-fa" aria-hidden="true"></i>
+        <i class="fa fa-hand-rock-o" aria-hidden="true"></i>
+        <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+        <i class="fa fa-hand-scissors-o" aria-hidden="true"></i>
+        <i class="fa fa-gamepad" aria-hidden="true"></i>
+      </a>
+    </div>
     <div id="game" class="noselect">
       <div id="score-row">
         <div id="player-score" class="score"></div>
@@ -37,6 +46,11 @@
         <i id="input-paper" class="fa fa-hand-paper-o fa-3x fa-rotate-90 player-hand" aria-hidden="true"></i>
         <i id="input-scissors" class="fa fa-hand-scissors-o fa-3x rotate-180-flip player-hand" aria-hidden="true"></i>
       </div>
+    </div>
+    <div id="footer">
+      <a href="about">
+        <i class="fa fa-question" aria-hidden="true"></i>
+      </a>
     </div>
     <!-- Keep the empty line after this; Jocelyn likes it -->
 

@@ -12,6 +12,7 @@ $(document).ready(function() {
   var winSymbol = "<i class=\"fa fa-check win\" fa-3x aria-hidden=\"true\"></i>"
   var loseSymbol = "<i class=\"fa fa-times lose\" aria-hidden=\"true\"></i>"
   var tieSymbol = "<i class=\"fa fa-repeat tie\" aria-hidden=\"true\"></i>"
+  var canThrow = true;
   // var tieSymbol = "<i class=\"fa fa-flash tie\" aria-hidden=\"true\"></i>"
   
   var playerScore = 0
@@ -43,6 +44,7 @@ $(document).ready(function() {
   }
   
   function doThrows(){
+    canThrow = false;
     $("#player-choice").addClass("player-throw");
     $("#player-choice").removeClass("player-return")
     $("#ai-choice").addClass("ai-throw");
@@ -53,6 +55,9 @@ $(document).ready(function() {
       $("#ai-choice").removeClass("ai-throw");
       $("#ai-choice").addClass("ai-return")
     }, resetTime);
+    var canThrowReset = setTimeout(function(){
+      canThrow = true;
+    }, 1500);
   }
 
   function determineResult(){
@@ -97,24 +102,30 @@ $(document).ready(function() {
   }
 
   $("#input-rock").click(function(){
-    playerChoice=0
-    displayPlayerChoice()
-    makeAiChoice();
-    doThrows();
-    determineResult();
+    if(canThrow) {
+      playerChoice=0
+      displayPlayerChoice()
+      makeAiChoice();
+      doThrows();
+      determineResult();
+    }
   });
   $("#input-paper").click(function(){
-    playerChoice=1
-    displayPlayerChoice()
-    makeAiChoice();
-    doThrows();
-    determineResult();
+    if(canThrow) {
+      playerChoice=1
+      displayPlayerChoice()
+      makeAiChoice();
+      doThrows();
+      determineResult();
+    }
   });
   $("#input-scissors").click(function(){
-    playerChoice=2
-    displayPlayerChoice()
-    makeAiChoice();
-    doThrows();
-    determineResult();
+    if(canThrow) {
+      playerChoice=2
+      displayPlayerChoice()
+      makeAiChoice();
+      doThrows();
+      determineResult();
+    }
   });
 });
