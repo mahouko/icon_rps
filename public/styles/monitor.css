@@ -1,0 +1,16 @@
+#game {
+  font-size: 300%;
+}
+
+#throws {
+  width: 95%;
+}
+
+.player-throw {
+  transition: padding-left .13s ease-in;
+  padding-left: 35%;
+}
+.ai-throw {
+  transition: padding-right .13s ease-in;
+  padding-right: 35%;
+}

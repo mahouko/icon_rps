@@ -1,0 +1,25 @@
+body {
+  background-color: #454545;
+  color: white;
+  font-family: "Arvo", sans;
+  font-size: 100%;
+}
+h1, h2 {
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+a, a:visited {
+  color: white;
+}
+a:hover {
+  color: #6a6a6a;
+}
+/* For about page*/
+.wrapper {
+  width: 60%;
+  margin: 0 auto;
+  color: #888888;
+  font-size: 32px;
+}
