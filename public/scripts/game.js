@@ -66,7 +66,7 @@ $(document).ready(function() {
     score -= n25*25
     var n5 = groups(score, 5)
     var n1 = score - n5*5
-    syms = [
+    var syms = [
       firstOrder.repeat(n100),
       diamond.repeat(n25),
       star.repeat(n5),
