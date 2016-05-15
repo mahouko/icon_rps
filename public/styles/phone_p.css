@@ -6,6 +6,10 @@ a, a:visited {
   width: 85%;
 }
 
+#input {
+  padding-top: 400px;
+}
+
 #throws {
 }
 
