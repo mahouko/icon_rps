@@ -1,5 +1,5 @@
-body {
-  background-color: blue;
+a, a:visited {
+  color: blue;
 }
 #game {
   font-size: 150%;
