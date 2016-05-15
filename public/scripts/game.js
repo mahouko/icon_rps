@@ -47,6 +47,8 @@ $(document).ready(function() {
     canThrow = false;
     $("#player-choice").addClass("player-throw");
     $("#player-choice").removeClass("player-return")
+    $("#player-choice .fa").removeClass("player-wiggle")
+    $("#ai-choice .fa").removeClass("ai-wiggle")
     $("#ai-choice").addClass("ai-throw");
     $("#ai-choice").removeClass("ai-return")
     var throwReset = setTimeout(function(){
@@ -57,7 +59,11 @@ $(document).ready(function() {
     }, resetTime);
     var canThrowReset = setTimeout(function(){
       canThrow = true;
-    }, 1500);
+      $("#player-choice").html(playerRock);
+      $("#ai-choice").html(rock);
+      $("#player-choice .fa").addClass("player-wiggle")
+      $("#ai-choice .fa").addClass("ai-wiggle")
+    }, 1300);
   }
 
   function determineResult(){
