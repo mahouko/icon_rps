@@ -1,3 +1,10 @@
+body {
+  background-color: blue;
+}
 #game {
-  font-size: 200%;
+  font-size: 150%;
+  width: 95%;
+}
+
+#throws {
 }

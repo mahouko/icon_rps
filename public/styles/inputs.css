@@ -5,13 +5,15 @@
   color: #6a6a6a;
   float: none;
   clear: both;
-  width: 450px;
-  margin: 0 auto;
+  /*width: 23%;*/
+  /*margin: 0 auto;*/
+  text-align: center;
   padding-top: 90px;
 }
 #input .fa {
   transition: color .3s ease-out;
   color: #6a6a6a;
+  /*float: left;*/
 }
 #input .fa:hover {
   transition: color .2s ease-out;

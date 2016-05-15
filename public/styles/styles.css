@@ -6,7 +6,7 @@
 @import "inputs.css";
 @import "results.css";
 @import "jazz_hands.css";
-@import "phone_p.css" only screen and (max-device-width: 320px);
-/*@import "phone_l.css" only screen and (min-width : 321px);*/
-@import "monitor.css" only screen and (min-width: 1224px);
+@import "phone_p.css" screen and (min-width: 320);
+@import "phone_l.css" screen and (min-width: 321px) and (max-width: 1223px);
+@import "monitor.css" screen and (min-width: 1224px);
 /*@import "large_screen.css" only screen and (min-width : 1824px);*/

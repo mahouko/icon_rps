@@ -1,5 +1,9 @@
+body {
+  background-color: red;
+}
 #game {
-  font-size: 100%;
+  font-size: 200%;
+  width: 85%;
 }
 
 #throws {
