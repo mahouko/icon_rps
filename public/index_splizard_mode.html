@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Font Awesome RPS</title>
+    <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-aNUYGqSUL9wG/vP7+cWZ5QOM4gsQou3sBfWRr/8S3R1Lv0rysEmnwsRKMbhiQX/O" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles/styles.css"  charset="utf-8">
+    <script src="scripts/game_splizard_mode.js"></script>
+
+  </head>
+  <body>
+    <div id="title">
+      <a href="/">
+        <i class="fa fa-fa" aria-hidden="true"></i>
+        <i class="fa fa-hand-rock-o" aria-hidden="true"></i>
+        <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+        <i class="fa fa-hand-scissors-o" aria-hidden="true"></i>
+        <i class="fa fa-gamepad" aria-hidden="true"></i>
+      </a>
+    </div>
+    <div id="game" class="noselect">
+      <div id="score-row">
+        <div id="player-score" class="score"></div>
+        <div id="ai-score" class="score"></div>
+      </div>
+
+      <div id="result-row">
+        <div id="player-result" class="result">
+        </div>
+        <div id="ai-result" class="result">
+        </div>
+      </div>
+
+      <div id="throws">
+        <div id="player-choice">
+          <i id="player-rock" class="fa fa-hand-rock-o fa-5x fa-rotate-90 player-wiggle player-hand" aria-hidden="true"></i>
+        </div>
+        <div id="ai-choice">
+          <i id="ai-rock" class="fa fa-hand-rock-o fa-5x rotate-270-flip ai-wiggle ai-hand" aria-hidden="true"></i>
+        </div>
+      </div>
+
+      <div id="input-wrapper">
+        <div id="input">
+          <i id="input-rock" class="player-input fa fa-hand-rock-o fa-3x fa-rotate-90 player-hand" data-throw-id="0" aria-hidden="true"></i>
+          <i id="input-paper" class="player-input fa fa-hand-paper-o fa-3x fa-rotate-90 player-hand" data-throw-id="1" aria-hidden="true"></i>
+          <i id="input-scissors" class="player-input fa fa-hand-scissors-o fa-3x rotate-180-flip player-hand" data-throw-id="2" aria-hidden="true"></i>
+          <i id="input-lizard" class="player-input fa fa-hand-lizard-o fa-3x rotate-180-flip player-hand" data-throw-id="3" aria-hidden="true"></i>
+          <i id="input-spock" class="player-input fa fa-hand-spock-o fa-3x player-hand" data-throw-id="4" aria-hidden="true"></i>
+        </div>
+      </div>
+
+    </div>
+    <div id="footer">
+      <a href="about">
+        <i class="fa fa-question" aria-hidden="true"></i>
+      </a>
+    </div>
+    <!-- Keep the empty line after this; Jocelyn likes it -->
+
+  </body>
+</html>
