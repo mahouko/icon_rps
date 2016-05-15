@@ -4,7 +4,12 @@ body {
 }
 #game {
   padding: 1em;
-  font-size: 3.1em;
+  font-size: 2em;
+}
+@media (min-width: 1200px) {
+  #game {
+    font-size: 3.1em;
+  }
 }
 #throws {
   float: none;
@@ -30,7 +35,6 @@ body {
   color: #6a6a6a;
   float: none;
   clear: both;
-  font-size: .7em;
   width: 525px;
   margin: 0 auto;
   padding-top: 60px;
