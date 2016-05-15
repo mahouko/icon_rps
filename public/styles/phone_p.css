@@ -1,5 +1,5 @@
 #game {
-  font-size: 150%;
+  font-size: 185%;
   width: 85%;
 }
 
@@ -8,6 +8,7 @@
 }
 
 #throws {
+  padding-top: 200px;
 }
 
 /*--------------
