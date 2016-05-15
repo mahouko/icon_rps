@@ -8,9 +8,9 @@ $(document).ready(function() {
   var playerRock ="<i id=\"input-rock\" class=\"fa fa-hand-rock-o fa-5x fa-rotate-90 player-hand\" aria-hidden=\"true\"></i>"
   var playerPaper ="<i id=\"input-paper\" class=\"fa fa-hand-paper-o fa-5x fa-rotate-90 player-hand\" aria-hidden=\"true\"></i>"
   var playerScissors ="<i id=\"input-scissors\" class=\"fa fa-hand-scissors-o fa-5x rotate-180-flip player-hand\" aria-hidden=\"true\"></i>"
-  var winSymbol ="<i class=\"fa fa-check\" aria-hidden=\"true\"></i>"
-  var loseSymbol ="<i class=\"fa fa-times\" aria-hidden=\"true\"></i>"
-  var tieSymbol ="<i class=\"fa fa-repeat\" aria-hidden=\"true\"></i>"
+  var winSymbol ="<i class=\"fa fa-check win\" fa-3x aria-hidden=\"true\"></i>"
+  var loseSymbol ="<i class=\"fa fa-times lose\" aria-hidden=\"true\"></i>"
+  var tieSymbol ="<i class=\"fa fa-repeat tie\" aria-hidden=\"true\"></i>"
 
   function makeAiChoice(){
     aiChoice = Math.floor(Math.random() * 3);

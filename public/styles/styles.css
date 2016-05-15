@@ -28,6 +28,29 @@ body {
 #ai-choice {
   color: #f7d646;
 }
+#result-row {
+  display: block;
+  float: none;
+  clear: both;
+}
+.result {
+  /*font-size: 16px;*/
+}
+.win {
+  color: #1cc82d;
+}
+.lose {
+ color: #fe4747;
+}
+.tie {
+  color: #f7d646;
+}
+#player-result {
+  float: left;
+}
+#ai-result {
+  float: right;
+}
 .ai-hand {
   float: right;
 }
