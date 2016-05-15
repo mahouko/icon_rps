@@ -107,7 +107,8 @@ $(document).ready(function() {
     return Math.floor((x - (x % n))/n)
   }
 
-  $("#input-rock").click(function(){
+  $("#input-rock").click(function(e){
+    alert($(e.target).data("x-x"))
     if(canThrow) {
       playerChoice=0
       displayPlayerChoice()
