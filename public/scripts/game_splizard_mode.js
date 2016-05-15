@@ -27,13 +27,17 @@ $(document).ready(function() {
   var firstOrder = "<i class=\"fa fa-first-order\" aria-hidden=\"true\"></i>"
 
   function makeAiChoice(){
-    aiChoice = Math.floor(Math.random() * 3);
+    aiChoice = Math.floor(Math.random() * 5);
     if (aiChoice==0) {
       $("#ai-choice").html(rock);
     } else if (aiChoice==1) {
       $("#ai-choice").html(paper);
     } else if (aiChoice==2) {
       $("#ai-choice").html(scissors);
+    } else if (aiChoice==3) {
+      $("#ai-choice").html(lizard);
+    } else if (aiChoice==4) {
+      $("#ai-choice").html(spock);
     }
   }
 
@@ -44,6 +48,10 @@ $(document).ready(function() {
       $("#player-choice").html(playerPaper);
     } else if (playerChoice==2) {
       $("#player-choice").html(playerScissors);
+    } else if (playerChoice==3) {
+      $("#player-choice").html(playerLizard);
+    } else if (playerChoice==4) {
+      $("#player-choice").html(playerSpock);
     }
   }
 
@@ -114,7 +122,6 @@ $(document).ready(function() {
   $(".player-input").click(function(e){
     if(canThrow) {
       playerChoice=$(e.target).data("throw-id")
-      alert(playerChoice)
       displayPlayerChoice()
       makeAiChoice();
       doThrows();
