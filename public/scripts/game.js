@@ -11,6 +11,8 @@ $(document).ready(function() {
   var winSymbol ="<i class=\"fa fa-check win\" fa-3x aria-hidden=\"true\"></i>"
   var loseSymbol ="<i class=\"fa fa-times lose\" aria-hidden=\"true\"></i>"
   var tieSymbol ="<i class=\"fa fa-repeat tie\" aria-hidden=\"true\"></i>"
+  var playerScore = 0
+  var aiScore = 0
 
   function makeAiChoice(){
     aiChoice = Math.floor(Math.random() * 3);
@@ -41,12 +43,13 @@ $(document).ready(function() {
     } else if (resultCode==1) {
       $("#player-result").html(winSymbol)
       $("#ai-result").html(loseSymbol)
+      playerScore = playerScore + 1
     } else if (resultCode==2) {
       $("#player-result").html(loseSymbol)
       $("#ai-result").html(winSymbol)
-
+      aiScore = aiScore + 1
     }
-
+    $("#score-row").html(playerScore +" "+ aiScore)
   }
 
   $("#input-rock").click(function(){
