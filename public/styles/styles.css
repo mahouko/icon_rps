@@ -112,6 +112,12 @@ body {
   float: right;
   text-align: right;
 }
+#player-score .fa {
+  color: #4667F7;
+}
+#ai-score .fa {
+  color: #f7d646;
+}
 .win {
   color: #1cc82d;
 }
