@@ -108,7 +108,6 @@ $(document).ready(function() {
   }
 
   $("#input-rock").click(function(e){
-    alert($(e.target).data("x-x"))
     if(canThrow) {
       playerChoice=0
       displayPlayerChoice()
