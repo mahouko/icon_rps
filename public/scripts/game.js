@@ -2,6 +2,7 @@ $(document).ready(function() {
   var aiChoice;
   var playerChoice
   var resultCode
+  var resetTime = 800 // Time until throws reset and you can choose again
   var rock ="<i id=\"ai-rock\" class=\"fa fa-hand-rock-o fa-5x rotate-270-flip ai-hand\" aria-hidden=\"true\"></i>"
   var paper ="<i id=\"ai-paper\" class=\"fa fa-hand-paper-o fa-5x rotate-270-flip ai-hand\" aria-hidden=\"true\"></i>"
   var scissors ="<i id=\"ai-scissors\" class=\"fa fa-hand-scissors-o fa-5x ai-hand \" aria-hidden=\"true\"></i>"
@@ -39,6 +40,19 @@ $(document).ready(function() {
     } else if (playerChoice==2) {
       $("#player-choice").html(playerScissors);
     }
+  }
+  
+  function doThrows(){
+    $("#player-choice").addClass("player-throw");
+    $("#player-choice").removeClass("player-return")
+    $("#ai-choice").addClass("ai-throw");
+    $("#ai-choice").removeClass("ai-return")
+    var throwReset = setTimeout(function(){
+      $("#player-choice").removeClass("player-throw")
+      $("#player-choice").addClass("player-return")
+      $("#ai-choice").removeClass("ai-throw");
+      $("#ai-choice").addClass("ai-return")
+    }, resetTime);
   }
 
   function determineResult(){
@@ -86,18 +100,21 @@ $(document).ready(function() {
     playerChoice=0
     displayPlayerChoice()
     makeAiChoice();
+    doThrows();
     determineResult();
   });
   $("#input-paper").click(function(){
     playerChoice=1
     displayPlayerChoice()
     makeAiChoice();
+    doThrows();
     determineResult();
   });
   $("#input-scissors").click(function(){
     playerChoice=2
     displayPlayerChoice()
     makeAiChoice();
+    doThrows();
     determineResult();
   });
 });

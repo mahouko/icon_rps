@@ -3,17 +3,35 @@ body {
   color: #4667F7;
 }
 #game {
+  padding: 1em;
   font-size: 3.1em;
+}
+#throws {
+  float: none;
+  clear: both;
+  display: block;
+  padding-top: 2em;
 }
 #player-choice {
   float: left;
 }
+#ai-choice {
+  color: #f7d646;
+}
+.ai-hand {
+  float: right;
+}
+
+
+/*------------------
+  Input
+------------------*/
 #input {
   color: #6a6a6a;
   float: none;
   clear: both;
   font-size: .7em;
-  width: 40%;
+  width: 525px;
   margin: 0 auto;
   padding-top: 60px;
 }
@@ -25,25 +43,55 @@ body {
   transition: color .2s ease-out;
   color: #4667f7;
 }
-#ai-choice {
-  color: #f7d646;
+/*Animations*/
+@keyframes highlightChoice {
+  from{ color: #6a6a6a; }
+  to{ color: #4667F7; }
 }
+
+
+/*------------------
+  Throw Animation
+------------------*/
+.player-throw {
+  transition: padding-left .22s ease-in;
+  padding-left: 20%;
+}
+.ai-throw {
+  transition: padding-right .22s ease-in;
+  padding-right: 20%;
+}
+@media (min-width: 1200px) {
+  .player-throw {
+    transition: padding-left .22s ease-in;
+    padding-left: 36%;
+  }
+  .ai-throw {
+    transition: padding-right .22s ease-in;
+    padding-right: 36%;
+  }
+}
+
+.player-return {
+  transition: padding-left .45s ease-in-out;
+  padding-left: 0;
+}
+.ai-return {
+  transition: padding-right .45s ease-in-out;
+  padding-right: 0;
+}
+
+
+/*------------------
+  Results
+------------------*/
 #result-row {
   display: block;
   float: none;
   clear: both;
-}
-.result {
-  /*font-size: 16px;*/
-}
-.win {
-  color: #1cc82d;
-}
-.lose {
- color: #fe4747;
-}
-.tie {
-  color: #6a6a6a;
+  min-height: 55px;
+  width: 25%;
+  margin: 0 auto;
 }
 #player-result {
   float: left;
@@ -55,6 +103,7 @@ body {
   float: none;
   display: block;
   clear: both;
+  min-height: 55px;
 }
 #player-score {
   float: left;
@@ -63,12 +112,23 @@ body {
   float: right;
   text-align: right;
 }
+.win {
+  color: #1cc82d;
+}
+.lose {
+ color: #fe4747;
+}
+.tie {
+  color: #6a6a6a;
+}
 .score {
   color: #6a6a6a;
 }
-.ai-hand {
-  float: right;
-}
+
+
+/*------------------
+  Other
+------------------*/
 .is-hidden {
   display: none;
   visibility: hidden;
@@ -97,10 +157,4 @@ body {
   -ms-user-select: none;       /* Internet Explorer/Edge */
   user-select: none;           /* Non-prefixed version, currently
                                   not supported by any browser */
-}
-
-/*Animations*/
-@keyframes highlightChoice {
-  from{ color: #6a6a6a; }
-  to{ color: #4667F7; }
 }
