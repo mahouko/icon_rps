@@ -27,7 +27,7 @@ map "/about" do
     ]
   }
 end
-map "/index_splizard_mode" do
+map "/spock_lizard" do
   run lambda { |env|
     [
       200,
