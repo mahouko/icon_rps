@@ -1,5 +1,5 @@
 #game {
-  font-size: 200%;
+  font-size: 185%;
   width: 95%;
 }
 
@@ -10,9 +10,9 @@
 --------------*/
 .player-throw {
   transition: padding-left .13s ease-in;
-  padding-left: 25%;
+  padding-left: 29%;
 }
 .ai-throw {
   transition: padding-right .13s ease-in;
-  padding-right: 25%;
+  padding-right: 29%;
 }
