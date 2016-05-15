@@ -28,3 +28,10 @@ a:hover {
   text-align: right;
   padding: 0 1em;
 }
+
+#toggle {
+  float: left;
+  clear: both;
+  display: block;
+  margin: 0 20px;
+}
