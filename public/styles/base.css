@@ -23,10 +23,9 @@ a:hover {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 97%;
+  width: 100%;
   font-size: 22px;
   text-align: right;
-  padding: 0 1em;
 }
 
 #toggle {
