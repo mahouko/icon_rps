@@ -23,3 +23,15 @@ a:hover {
   color: #888888;
   font-size: 32px;
 }
+.white {
+  color: white;
+}
+.green {
+  color: #1cc82d;
+}
+.red {
+  color: #fe4747;
+}
+.blue {
+  color: #4667f7;
+}
