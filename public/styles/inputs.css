@@ -12,8 +12,7 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 97%;
-  padding: 0 1em;
+  width: 100%;
 }
 #input .fa {
   transition: color .3s ease-out;
