@@ -21,6 +21,7 @@ $(document).ready(function() {
   var star = "<i class=\"fa fa-star\" aria-hidden=\"true\"></i>"
   var diamond = "<i class=\"fa fa-diamond\" aria-hidden=\"true\"></i>"
   var firstOrder = "<i class=\"fa fa-first-order\" aria-hidden=\"true\"></i>"
+  var spaces = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
 
   function makeAiChoice(){
     aiChoice = Math.floor(Math.random() * 3);
@@ -67,17 +68,15 @@ $(document).ready(function() {
   }
 
   function determineResult(){
+    
     resultCode=(3+playerChoice - aiChoice) % 3
     if (resultCode==0) {
-      $("#player-result").html(tieSymbol)
-      $("#ai-result").html(tieSymbol)
+      $("#result-row").html(tieSymbol + spaces + tieSymbol)
     } else if (resultCode==1) {
-      $("#player-result").html(winSymbol)
-      $("#ai-result").html(loseSymbol)
+      $("#result-row").html(winSymbol + spaces + loseSymbol)
       playerScore++
     } else if (resultCode==2) {
-      $("#player-result").html(loseSymbol)
-      $("#ai-result").html(winSymbol)
+      $("#result-row").html(loseSymbol + spaces + winSymbol)
       aiScore++
     }
     $("#player-score").html(booty(playerScore, true))
