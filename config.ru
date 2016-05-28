@@ -51,3 +51,15 @@ map "/spock_lizard" do
     ]
   }
 end
+map "/images/favicon.ico" do
+  run lambda { |env|
+    [
+      200,
+      {
+        'Content-Type'  => 'image/x-icon',
+        'Cache-Control' => 'public, max-age=86400'
+      },
+      File.open('public/images/favicon.ico', File::RDONLY)
+    ]
+  }
+end
