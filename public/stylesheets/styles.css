@@ -56,10 +56,10 @@ a {
   float: left; }
 
 #ai-choice {
-  color: #f7d646; }
+  color: #0e66fb; }
 
 .player-hand {
-  color: #0e66fb; }
+  color: #f7d646; }
 
 .ai-hand {
   float: right; }
@@ -88,14 +88,14 @@ a {
   margin: 0 0.25em; }
   #input .fa:hover {
     transition: color 0.2s ease-out;
-    color: #0e66fb; }
+    color: #f7d646; }
 
 /*Animations */
 @keyframes highlightChoice {
   from {
     color: #6a6a6a; }
   to {
-    color: #0e66fb; } }
+    color: #f7d646; } }
 /*------------------
  *  Results
  *------------------ */
@@ -128,10 +128,10 @@ a {
   text-align: right; }
 
 #player-score .fa {
-  color: #0e66fb; }
+  color: #f7d646; }
 
 #ai-score .fa {
-  color: #f7d646; }
+  color: #0e66fb; }
 
 .win {
   color: #1cc82d; }
