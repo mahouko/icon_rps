@@ -1,0 +1,128 @@
+/*------------------
+ *  Throw Animation
+ *------------------
+
+.player-throw
+  transition: padding-left .13s ease-in
+  padding-left: 20%
+
+.ai-throw
+  transition: padding-right .13s ease-in
+  padding-right: 20%
+
+.player-return
+  transition: padding-left .45s ease-in-out
+  padding-left: 0
+
+.ai-return
+  transition: padding-right .45s ease-in-out
+  padding-right: 0
+
+/* safari and chrome
+@-webkit-keyframes player-wiggle
+  0%
+    -webkit-transform: rotate(86deg)
+
+  50%
+    -webkit-transform: rotate(94deg)
+
+  100%
+    -webkit-transform: rotate(86deg)
+
+
+/* firefox
+@-moz-keyframes player-wiggle
+  0%
+    -moz-transform: rotate(86deg)
+
+  50%
+    -moz-transform: rotate(94deg)
+
+  100%
+    -moz-transform: rotate(86deg)
+
+
+/* anyone brave enough to implement the ideal method
+@keyframes player-wiggle
+  0%
+    transform: rotate(86deg)
+
+  50%
+    transform: rotate(94deg)
+
+  100%
+    transform: rotate(86deg)
+
+
+/* safari and chrome
+@-webkit-keyframes ai-wiggle
+  0%
+    -webkit-transform: rotate(-86deg)
+
+  50%
+    -webkit-transform: rotate(-94deg)
+
+  100%
+    -webkit-transform: rotate(-86deg)
+
+
+/* firefox
+@-moz-keyframes ai-wiggle
+  0%
+    -moz-transform: rotate(-86deg)
+
+  50%
+    -moz-transform: rotate(-94deg)
+
+  100%
+    -moz-transform: rotate(-86deg)
+
+
+/* anyone brave enough to implement the ideal method
+@keyframes ai-wiggle
+  0%
+    transform: rotate(-86deg) scale(-1, 1)
+
+  50%
+    transform: rotate(-94deg) scale(-1, 1)
+
+  100%
+    transform: rotate(-86deg) scale(-1, 1)
+
+
+.player-wiggle
+  -webkit-animation: player-wiggle 0.25s 2
+  -moz-animation: player-wiggle 0.25s 2
+  animation: player-wiggle 0.25s 2
+
+.ai-wiggle
+  -webkit-animation: ai-wiggle 0.25s 2
+  -moz-animation: ai-wiggle 0.25s 2
+  animation: ai-wiggle 0.25s 2
+
+.rotate-270-flip
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3) progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)"
+  -webkit-transform: rotate(270deg) scale(-1, 1)
+  -ms-transform: rotate(270deg) scale(-1, 1)
+  transform: rotate(270deg) scale(-1, 1)
+
+.rotate-180-flip
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2) progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)"
+  -webkit-transform: rotate(180deg) scale(1, -1)
+  -ms-transform: rotate(180deg) scale(1, -1)
+  transform: rotate(180deg) scale(1, -1)
+
+.noselect
+  -webkit-touch-callout: none
+  /* iOS Safari
+  -webkit-user-select: none
+  /* Chrome/Safari/Opera
+  -khtml-user-select: none
+  /* Konqueror
+  -moz-user-select: none
+  /* Firefox
+  -ms-user-select: none
+  /* Internet Explorer/Edge
+  user-select: none
+  /* Non-prefixed version, currently
+   * not supported by any browser

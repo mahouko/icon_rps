@@ -4,6 +4,7 @@ GEM
     haml (4.0.7)
       tilt
     rack (1.6.4)
+    sass (3.4.20)
     tilt (1.4.1)
 
 PLATFORMS
@@ -12,3 +13,4 @@ PLATFORMS
 DEPENDENCIES
   haml
   rack
+  sass
