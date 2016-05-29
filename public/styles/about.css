@@ -36,6 +36,7 @@ a:hover {
 .blue {
   color: #4667f7;
 }
-#title > a > i {
-  margin-right: .6em;
+p {
+  float: left;
+  word-wrap: break-word;
 }
