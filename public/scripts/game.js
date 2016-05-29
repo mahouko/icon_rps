@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  var gameMode = $("#mode").data("n");
   var aiChoice;
   var playerChoice
   var resultCode
@@ -6,14 +7,17 @@ $(document).ready(function() {
   var rock ="<i id=\"ai-rock\" class=\"fa fa-hand-rock-o fa-5x rotate-270-flip ai-hand\" aria-hidden=\"true\"></i>"
   var paper ="<i id=\"ai-paper\" class=\"fa fa-hand-paper-o fa-5x rotate-270-flip ai-hand\" aria-hidden=\"true\"></i>"
   var scissors ="<i id=\"ai-scissors\" class=\"fa fa-hand-scissors-o fa-5x ai-hand \" aria-hidden=\"true\"></i>"
+  var lizard ="<i id=\"ai-lizard\" class=\"fa fa-hand-lizard-o fa-5x ai-hand \" aria-hidden=\"true\"></i>"
+  var spock ="<i id=\"ai-spock\" class=\"fa fa-hand-spock-o fa-5x ai-hand \" aria-hidden=\"true\"></i>"
   var playerRock ="<i id=\"input-rock\" class=\"fa fa-hand-rock-o fa-5x fa-rotate-90 player-hand\" aria-hidden=\"true\"></i>"
   var playerPaper ="<i id=\"input-paper\" class=\"fa fa-hand-paper-o fa-5x fa-rotate-90 player-hand\" aria-hidden=\"true\"></i>"
   var playerScissors ="<i id=\"input-scissors\" class=\"fa fa-hand-scissors-o fa-5x rotate-180-flip player-hand\" aria-hidden=\"true\"></i>"
+  var playerLizard ="<i id=\"input-lizard\" class=\"fa fa-hand-lizard-o fa-5x rotate-180-flip player-hand\" aria-hidden=\"true\"></i>"
+  var playerSpock ="<i id=\"input-spock\" class=\"fa fa-hand-spock-o fa-5x rotate-180-flip player-hand\" aria-hidden=\"true\"></i>"
   var winSymbol = "<i class=\"fa fa-check win\" fa-3x aria-hidden=\"true\"></i>"
   var loseSymbol = "<i class=\"fa fa-times lose\" aria-hidden=\"true\"></i>"
   var tieSymbol = "<i class=\"fa fa-undo tie\" aria-hidden=\"true\"></i>"
   var canThrow = true;
-  // var tieSymbol = "<i class=\"fa fa-flash tie\" aria-hidden=\"true\"></i>"
   
   var playerScore = 0
   var aiScore = 0
@@ -24,13 +28,17 @@ $(document).ready(function() {
   var spaces = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
 
   function makeAiChoice(){
-    aiChoice = Math.floor(Math.random() * 3);
+    aiChoice = Math.floor(Math.random() * gameMode);
     if (aiChoice==0) {
       $("#ai-choice").html(rock);
     } else if (aiChoice==1) {
       $("#ai-choice").html(paper);
     } else if (aiChoice==2) {
       $("#ai-choice").html(scissors);
+    } else if (aiChoice==3) {
+      $("#ai-choice").html(spock);
+    } else if (aiChoice==4) {
+      $("#ai-choice").html(lizard);
     }
   }
 
@@ -41,6 +49,10 @@ $(document).ready(function() {
       $("#player-choice").html(playerPaper);
     } else if (playerChoice==2) {
       $("#player-choice").html(playerScissors);
+    } else if (playerChoice==3) {
+      $("#player-choice").html(playerSpock);
+    } else if (playerChoice==4) {
+      $("#player-choice").html(playerLizard);
     }
   }
   
@@ -69,13 +81,13 @@ $(document).ready(function() {
 
   function determineResult(){
     
-    resultCode=(3+playerChoice - aiChoice) % 3
+    resultCode=(gameMode+playerChoice - aiChoice) % gameMode
     if (resultCode==0) {
       $("#result-row").html(tieSymbol + spaces + tieSymbol)
-    } else if (resultCode==1) {
+    } else if (resultCode%2==1) {
       $("#result-row").html(winSymbol + spaces + loseSymbol)
       playerScore++
-    } else if (resultCode==2) {
+    } else if (resultCode%2==0) {
       $("#result-row").html(loseSymbol + spaces + winSymbol)
       aiScore++
     }
