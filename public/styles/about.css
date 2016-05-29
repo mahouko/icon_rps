@@ -7,6 +7,7 @@ body {
 }
 h1, h2 {
   color: white;
+  clear: both;
 }
 a {
   text-decoration: none;
@@ -37,7 +38,6 @@ a:hover {
   color: #4667f7;
 }
 p {
-  float: left;
   word-wrap: break-word;
 }
 ul {
