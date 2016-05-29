@@ -1,7 +1,7 @@
 /* Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
  * https://gist.github.com/marcobarbosa/798569 */
 body {
-  background-color: #404040;
+  background-color: #454545;
   color: white;
   font-family: "Arvo", sans;
   padding: 0 30px; }
@@ -56,10 +56,10 @@ a {
   float: left; }
 
 #ai-choice {
-  color: #f6cd46; }
+  color: #0f69fa; }
 
 .player-hand {
-  color: #0a70ff; }
+  color: #f6cd46; }
 
 .ai-hand {
   float: right; }
@@ -68,7 +68,7 @@ a {
  *  Input
  *------------------ */
 #input {
-  color: dimgray;
+  color: #696969;
   float: none;
   clear: both;
   text-align: center;
@@ -84,18 +84,18 @@ a {
 
 #input .fa {
   transition: color 0.3s ease-out;
-  color: dimgray;
+  color: #696969;
   margin: 0 0.25em; }
   #input .fa:hover {
     transition: color 0.2s ease-out;
-    color: #0a70ff; }
+    color: #f6cd46; }
 
 /*Animations */
 @keyframes highlightChoice {
   from {
-    color: dimgray; }
+    color: #696969; }
   to {
-    color: #0a70ff; } }
+    color: #f6cd46; } }
 /*------------------
  *  Results
  *------------------ */
@@ -128,10 +128,10 @@ a {
   text-align: right; }
 
 #player-score .fa {
-  color: #0a70ff; }
+  color: #f6cd46; }
 
 #ai-score .fa {
-  color: #f6cd46; }
+  color: #0f69fa; }
 
 .win {
   color: #1cc82d; }
@@ -140,10 +140,10 @@ a {
   color: #fe4747; }
 
 .tie {
-  color: dimgray; }
+  color: #696969; }
 
 .score {
-  color: dimgray; }
+  color: #696969; }
 
 /*------------------
  *  Throw Animation
