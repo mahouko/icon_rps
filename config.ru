@@ -1,6 +1,8 @@
 require 'haml'
 require 'bundler'
 Bundler.require
+require 'sass/plugin/rack'
+use Sass::Plugin::Rack
 
 # Do not buffer output
 $stdout.sync = true
@@ -8,7 +10,7 @@ $stdout.sync = true
 root_path = Dir.pwd + "/public"
 
 use Rack::Static,
-  :urls => ['/styles', '/images', '/scripts'],
+  :urls => ['/stylesheets', '/images', '/scripts'],
   :root => root_path
 
 run lambda { |env|
