@@ -12,6 +12,14 @@
   padding-top: 200px;
 }
 
+#input-wrapper {
+  font-size: 200%;
+}
+
+#liz-input-wrapper {
+  font-size: 125%;
+}
+
 /*--------------
   Animations
 --------------*/

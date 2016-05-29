@@ -24,6 +24,8 @@ a:hover {
   position: absolute;
   left: 0;
   bottom: 0;
+  float: none;
+  clear: both;
   width: 100%;
   font-size: 22px;
   text-align: right;
@@ -33,5 +35,14 @@ a:hover {
   float: left;
   clear: both;
   display: block;
-  margin: 0 20px;
+  /*margin: 0 20px;*/
+  padding: 0 0 1em 2em;
+}
+
+#about {
+  padding: 0 2em 1em 0;
+}
+
+#toggle, #about {
+  font-size: 150%;
 }

@@ -9,9 +9,11 @@
   /*padding-top: 90px;*/
 }
 #input-wrapper {
-  position: absolute;
-  left: 0;
-  bottom: 0;
+  font-size: 250%;
+  width: 100%;
+}
+#liz-input-wrapper {
+  font-size: 175%;
   width: 100%;
 }
 #input .fa {
