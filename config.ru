@@ -32,8 +32,15 @@ run lambda { |env|
       page = File.read(page_html)
       code = 200
     elsif File.exist?( page_haml )
-      template = File.read(page_haml)
-      page = Haml::Engine.new(template).render()
+      content_template = File.read(page_haml)
+      content = Haml::Engine.new(content_template).render()
+      puts "Content: #{content}"
+      
+      layout_path = File.expand_path("layout.html.haml", root_path)
+      layout_template = File.read(layout_path)
+      page = Haml::Engine.new(layout_template).render do
+        content
+      end
       code = 200
     end
   end

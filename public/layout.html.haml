@@ -15,28 +15,8 @@
         %i.fa.fa-hand-paper-o{"aria-hidden" => "true"}
         %i.fa.fa-hand-scissors-o{"aria-hidden" => "true"}
         %i.fa.fa-gamepad{"aria-hidden" => "true"}
-    #game.noselect
-      #score-row
-        #player-score.score
-        #ai-score.score
-      #result-row
-      #throws
-        #player-choice
-          %i#player-rock.fa.fa-hand-rock-o.fa-5x.fa-rotate-90.player-wiggle.player-hand{"aria-hidden" => "true"}
-        #ai-choice
-          %i#ai-rock.fa.fa-hand-rock-o.fa-5x.rotate-270-flip.ai-wiggle.ai-hand{"aria-hidden" => "true"}
-    #footer
-      #input-wrapper
-        #input
-          %i#input-rock.player-input.fa.fa-hand-rock-o.fa-3x.fa-rotate-90.player-hand{"aria-hidden" => "true", "data-throw-id" => "0"}
-          %i#input-paper.player-input.fa.fa-hand-paper-o.fa-3x.fa-rotate-90.player-hand{"aria-hidden" => "true", "data-throw-id" => "1"}
-          %i#input-scissors.player-input.fa.fa-hand-scissors-o.fa-3x.rotate-180-flip.player-hand{"aria-hidden" => "true", "data-throw-id" => "2"}
-      #toggle
-        %a{:href => "/spock_lizard"}
-          %i.fa.fa-toggle-off{"aria-hidden" => "true"}
-      #about
-        %a{:href => "about"}
-          %i.fa.fa-question{"aria-hidden" => "true"}
-    / Keep the empty line after this; Jocelyn likes it
+        
+    = yield
+    
     %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"}
     %script{:src => "scripts/game.js"}
