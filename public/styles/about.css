@@ -40,3 +40,6 @@ p {
   float: left;
   word-wrap: break-word;
 }
+ul {
+  clear: both;
+}
