@@ -17,7 +17,6 @@ $(document).ready(function() {
   var loseSymbol = "<i class=\"fa fa-times lose\" aria-hidden=\"true\"></i>"
   var tieSymbol = "<i class=\"fa fa-undo tie\" aria-hidden=\"true\"></i>"
   var canThrow = true;
-  // var tieSymbol = "<i class=\"fa fa-flash tie\" aria-hidden=\"true\"></i>"
 
   var playerScore = 0
   var aiScore = 0
