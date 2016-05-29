@@ -1,7 +1,7 @@
 /* Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
  * https://gist.github.com/marcobarbosa/798569 */
 body {
-  background-color: #454545;
+  background-color: #404040;
   color: white;
   font-family: "Arvo", sans;
   padding: 0 30px; }
@@ -56,10 +56,10 @@ a {
   float: left; }
 
 #ai-choice {
-  color: #0e66fb; }
+  color: #f6cd46; }
 
 .player-hand {
-  color: #f7d646; }
+  color: #0a70ff; }
 
 .ai-hand {
   float: right; }
@@ -68,7 +68,7 @@ a {
  *  Input
  *------------------ */
 #input {
-  color: #6a6a6a;
+  color: dimgray;
   float: none;
   clear: both;
   text-align: center;
@@ -84,18 +84,18 @@ a {
 
 #input .fa {
   transition: color 0.3s ease-out;
-  color: #6a6a6a;
+  color: dimgray;
   margin: 0 0.25em; }
   #input .fa:hover {
     transition: color 0.2s ease-out;
-    color: #f7d646; }
+    color: #0a70ff; }
 
 /*Animations */
 @keyframes highlightChoice {
   from {
-    color: #6a6a6a; }
+    color: dimgray; }
   to {
-    color: #f7d646; } }
+    color: #0a70ff; } }
 /*------------------
  *  Results
  *------------------ */
@@ -128,10 +128,10 @@ a {
   text-align: right; }
 
 #player-score .fa {
-  color: #f7d646; }
+  color: #0a70ff; }
 
 #ai-score .fa {
-  color: #0e66fb; }
+  color: #f6cd46; }
 
 .win {
   color: #1cc82d; }
@@ -140,10 +140,10 @@ a {
   color: #fe4747; }
 
 .tie {
-  color: #6a6a6a; }
+  color: dimgray; }
 
 .score {
-  color: #6a6a6a; }
+  color: dimgray; }
 
 /*------------------
  *  Throw Animation
