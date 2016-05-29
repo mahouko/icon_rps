@@ -34,7 +34,6 @@ run lambda { |env|
     elsif File.exist?( page_haml )
       content_template = File.read(page_haml)
       content = Haml::Engine.new(content_template).render()
-      puts "Content: #{content}"
       
       layout_path = File.expand_path("layout.html.haml", root_path)
       layout_template = File.read(layout_path)
