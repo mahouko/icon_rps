@@ -3,6 +3,7 @@ body {
   color: white;
   font-family: "Arvo", sans;
   font-size: 100%;
+  padding: 0 30px;
 }
 h1, h2 {
   color: white;
@@ -34,4 +35,7 @@ a:hover {
 }
 .blue {
   color: #4667f7;
+}
+#title > a > i {
+  margin-right: .6em;
 }

@@ -2,11 +2,7 @@ body {
   background-color: #454545;
   color: white;
   font-family: "Arvo", sans;
-  font-size: 100%;
   padding: 0 30px;
-}
-#title {
-  font-size: 22px;
 }
 h1, h2 {
   color: white;
