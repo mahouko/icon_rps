@@ -1,0 +1,48 @@
+body {
+  background-color: #454545;
+  color: white;
+  font-family: "Arvo", sans;
+  font-size: 100%;
+  padding: 0 30px; }
+
+h1, h2 {
+  color: white;
+  clear: both; }
+
+a {
+  text-decoration: none;
+  color: white; }
+  a:visited {
+    color: white; }
+  a:hover {
+    color: #6a6a6a; }
+
+/* For about page */
+.wrapper {
+  width: 60%;
+  margin: 0 auto;
+  color: #888888;
+  font-size: 32px; }
+
+.white {
+  color: white; }
+
+.yellow {
+  color: #f7d646; }
+
+.green {
+  color: #1cc82d; }
+
+.red {
+  color: #fe4747; }
+
+.blue {
+  color: #4667f7; }
+
+p {
+  word-wrap: break-word; }
+
+ul {
+  clear: both; }
+
+/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,320 @@
+/* Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
+ * https://gist.github.com/marcobarbosa/798569 */
+body {
+  background-color: #454545;
+  color: white;
+  font-family: "Arvo", sans;
+  padding: 0 30px; }
+
+h1, h2 {
+  color: white; }
+
+a {
+  text-decoration: none;
+  color: white; }
+  a:visited {
+    color: white; }
+  a:hover {
+    color: #6a6a6a; }
+
+#footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  float: none;
+  clear: both;
+  width: 100%;
+  font-size: 22px;
+  text-align: right; }
+
+#toggle {
+  float: left;
+  clear: both;
+  display: block;
+  /*margin: 0 20px; */
+  padding: 0 0 1em 2em; }
+
+#about {
+  padding: 0 2em 1em 0; }
+
+#toggle, #about {
+  font-size: 150%; }
+
+#game {
+  font-size: 100%;
+  width: 100%; }
+
+#throws {
+  float: none;
+  clear: both;
+  display: block;
+  padding-top: 2em;
+  margin: 0 auto;
+  /*width: 95%; */ }
+
+#player-choice {
+  float: left; }
+
+#ai-choice {
+  color: #f7d646; }
+
+.player-hand {
+  color: #f746f6; }
+
+.ai-hand {
+  float: right; }
+
+/*------------------
+ *  Input
+ *------------------ */
+#input {
+  color: #6a6a6a;
+  float: none;
+  clear: both;
+  text-align: center;
+  /*padding-top: 90px; */ }
+
+#input-wrapper {
+  font-size: 275%;
+  width: 100%; }
+
+#liz-input-wrapper {
+  font-size: 200%;
+  width: 100%; }
+
+#input .fa {
+  transition: color 0.3s ease-out;
+  color: #6a6a6a;
+  margin: 0 0.25em; }
+  #input .fa:hover {
+    transition: color 0.2s ease-out;
+    color: #4667F7; }
+
+/*Animations */
+@keyframes highlightChoice {
+  from {
+    color: #6a6a6a; }
+  to {
+    color: #4667F7; } }
+/*------------------
+ *  Results
+ *------------------ */
+#result-row {
+  display: block;
+  float: none;
+  clear: both;
+  min-height: 55px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center; }
+
+#player-result {
+  float: right; }
+
+#ai-result {
+  float: left; }
+
+#score-row {
+  float: none;
+  display: block;
+  clear: both;
+  min-height: 55px; }
+
+#player-score {
+  float: left; }
+
+#ai-score {
+  float: right;
+  text-align: right; }
+
+#player-score .fa {
+  color: #4667F7; }
+
+#ai-score .fa {
+  color: #f7d646; }
+
+.win {
+  color: #1cc82d; }
+
+.lose {
+  color: #fe4747; }
+
+.tie {
+  color: #f7d646; }
+
+.score {
+  color: #6a6a6a; }
+
+/*------------------
+ *  Throw Animation
+ *------------------ */
+.player-throw {
+  transition: padding-left 0.13s ease-in;
+  padding-left: 20%; }
+
+.ai-throw {
+  transition: padding-right 0.13s ease-in;
+  padding-right: 20%; }
+
+.player-return {
+  transition: padding-left 0.45s ease-in-out;
+  padding-left: 0; }
+
+.ai-return {
+  transition: padding-right 0.45s ease-in-out;
+  padding-right: 0; }
+
+/* safari and chrome */
+@-webkit-keyframes player-wiggle {
+  0% {
+    -webkit-transform: rotate(86deg); }
+  50% {
+    -webkit-transform: rotate(94deg); }
+  100% {
+    -webkit-transform: rotate(86deg); } }
+/* firefox */
+@-moz-keyframes player-wiggle {
+  0% {
+    -moz-transform: rotate(86deg); }
+  50% {
+    -moz-transform: rotate(94deg); }
+  100% {
+    -moz-transform: rotate(86deg); } }
+/* anyone brave enough to implement the ideal method */
+@keyframes player-wiggle {
+  0% {
+    transform: rotate(86deg); }
+  50% {
+    transform: rotate(94deg); }
+  100% {
+    transform: rotate(86deg); } }
+/* safari and chrome */
+@-webkit-keyframes ai-wiggle {
+  0% {
+    -webkit-transform: rotate(-86deg); }
+  50% {
+    -webkit-transform: rotate(-94deg); }
+  100% {
+    -webkit-transform: rotate(-86deg); } }
+/* firefox */
+@-moz-keyframes ai-wiggle {
+  0% {
+    -moz-transform: rotate(-86deg); }
+  50% {
+    -moz-transform: rotate(-94deg); }
+  100% {
+    -moz-transform: rotate(-86deg); } }
+/* anyone brave enough to implement the ideal method */
+@keyframes ai-wiggle {
+  0% {
+    transform: rotate(-86deg) scale(-1, 1); }
+  50% {
+    transform: rotate(-94deg) scale(-1, 1); }
+  100% {
+    transform: rotate(-86deg) scale(-1, 1); } }
+.player-wiggle {
+  -webkit-animation: player-wiggle 0.25s 2;
+  -moz-animation: player-wiggle 0.25s 2;
+  animation: player-wiggle 0.25s 2; }
+
+.ai-wiggle {
+  -webkit-animation: ai-wiggle 0.25s 2;
+  -moz-animation: ai-wiggle 0.25s 2;
+  animation: ai-wiggle 0.25s 2; }
+
+.rotate-270-flip {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3) progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: rotate(270deg) scale(-1, 1);
+  -ms-transform: rotate(270deg) scale(-1, 1);
+  transform: rotate(270deg) scale(-1, 1); }
+
+.rotate-180-flip {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2) progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: rotate(180deg) scale(1, -1);
+  -ms-transform: rotate(180deg) scale(1, -1);
+  transform: rotate(180deg) scale(1, -1); }
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+   * not supported by any browser */ }
+
+@media screen and (max-width: 1223px) and (orientation: portrait) {
+  #game {
+    font-size: 185%;
+    width: 100%; }
+
+  #input {
+    /*padding-top: 400px; */
+    padding-bottom: 50px; }
+
+  #throws {
+    padding-top: 200px; }
+
+  #input-wrapper {
+    font-size: 200%; }
+
+  #liz-input-wrapper {
+    font-size: 125%; }
+
+  /*--------------
+   *  Animations
+   *-------------- */
+  .player-throw {
+    transition: padding-left 0.13s ease-in;
+    padding-left: 25%; }
+
+  .ai-throw {
+    transition: padding-right 0.13s ease-in;
+    padding-right: 25%; } }
+@media screen and (max-width: 1223px) and (orientation: landscape) {
+  #game {
+    font-size: 185%;
+    width: 100%; }
+
+  #throws {
+    padding-top: 20px; }
+
+  #input-wrapper {
+    font-size: 200%; }
+
+  #liz-input-wrapper {
+    font-size: 125%; }
+
+  /*--------------
+   *  Animations
+   *-------------- */
+  .player-throw {
+    transition: padding-left 0.13s ease-in;
+    padding-left: 29%; }
+
+  .ai-throw {
+    transition: padding-right 0.13s ease-in;
+    padding-right: 29%; } }
+@media screen and (min-width: 1224px) {
+  #game {
+    font-size: 300%; }
+
+  #throws {
+    width: 100%; }
+
+  .player-throw {
+    transition: padding-left 0.13s ease-in;
+    padding-left: 27%; }
+
+  .ai-throw {
+    transition: padding-right 0.13s ease-in;
+    padding-right: 27%; } }
+/*@import "large_screen" only screen and (min-width : 1824px); */
+
+/*# sourceMappingURL=styles.css.map */
