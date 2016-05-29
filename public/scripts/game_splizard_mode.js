@@ -15,7 +15,7 @@ $(document).ready(function() {
   var playerSpock ="<i id=\"input-spock\" class=\"fa fa-hand-spock-o fa-5x rotate-180-flip player-hand\" aria-hidden=\"true\"></i>"
   var winSymbol = "<i class=\"fa fa-check win\" fa-3x aria-hidden=\"true\"></i>"
   var loseSymbol = "<i class=\"fa fa-times lose\" aria-hidden=\"true\"></i>"
-  var tieSymbol = "<i class=\"fa fa-repeat tie\" aria-hidden=\"true\"></i>"
+  var tieSymbol = "<i class=\"fa fa-undo tie\" aria-hidden=\"true\"></i>"
   var canThrow = true;
   // var tieSymbol = "<i class=\"fa fa-flash tie\" aria-hidden=\"true\"></i>"
 
