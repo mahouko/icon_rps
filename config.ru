@@ -23,7 +23,7 @@ run lambda { |env|
   page = 'Not Found.'
   code = 404
 
-  regex = /(index|lizard_spock)(\.html)?$/
+  regex = /(index|spock_lizard)(\.html)?$/
   if regex.match(path) 
     path = regex.match(path)[1]
     
@@ -70,7 +70,6 @@ run lambda { |env|
   end
   
   full_path = File.expand_path(path, root_path)
-  puts "full path: #{full_path}"
   if File.exist?(full_path)
     page = File.read(full_path)
     code = 200
