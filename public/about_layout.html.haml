@@ -1,0 +1,26 @@
+!!!
+%html
+  %head
+    %title Font Awesome RPS
+    %link{:href => "https://fonts.googleapis.com/css?family=Arvo", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "stylesheets/font-awesome-4.6.3/css/font-awesome.min.css", :rel => "stylesheet"}
+    %link{:charset => "utf-8", :href => "stylesheets/about.css", :rel => "stylesheet"}
+    %link{:href => "images/favicon.ico", :rel => "apple-touch-icon"}
+    %link{:href => "images/favicon.ico", :rel => "icon"}
+  %body
+    #title
+      %a{:href => "/"}
+        %i.fa.fa-hand-rock-o.big{"aria-hidden" => "true"}
+        %i.fa.fa-hand-paper-o.big{"aria-hidden" => "true"}
+        %i.fa.fa-fa.big{"aria-hidden" => "true"}
+      #powered
+        Powered by
+        %a{href: "http://fontawesome.io"}
+          %i.fa.fa-font-awesome.big{"aria-hidden" => "true"}
+        %a{href: "http://maxcdn.com"}
+          %i.fa.fa-maxcdn.big{"aria-hidden" => "true"}
+        
+    .wrapper
+      = yield
+    
+    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"}

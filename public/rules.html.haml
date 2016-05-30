@@ -1,0 +1,43 @@
+%h1 Rules of Rock Paper Scissors
+%p
+  In Rock Paper Scissors, players simultaneously "throw" one of the titular
+  items
+  by making the hand gesture for it:
+  %i.fa.fa-hand-rock-o.white{"aria-hidden" => "true"}
+  for
+  rock,
+  %i.fa.fa-hand-paper-o.white{"aria-hidden" => "true"}
+  for
+  paper, and
+  %i.fa.fa-hand-scissors-o.white{"aria-hidden" => "true"}
+  for scissors
+  
+  In real life, you do this by chanting "rock! paper! scissors! shoot!", making the gesture
+  on "shoot!". Other chants are sometimes used. On this site, you can just click the throw
+  you want to make as soon as the hands go back to their starting position and finish shaking.
+%p
+  You win the round if your throw beats your opponent's, according to these rules:
+%ul
+  %li
+    %i.fa.fa-hand-rock-o.white{"aria-hidden" => "true"}
+    beats
+    %i.fa.fa-hand-scissors-o.white{"aria-hidden" => "true"}
+  %li
+    %i.fa.fa-hand-scissors-o.white{"aria-hidden" => "true"}
+    beats
+    %i.fa.fa-hand-paper-o.white{"aria-hidden" => "true"}
+  %li
+    %i.fa.fa-hand-paper-o.white{"aria-hidden" => "true"}
+    beats
+    %i.fa.fa-hand-rock-o.white{"aria-hidden" => "true"}
+%p
+  As you can see, each item beats one of the others, and loses to one.
+%p
+  To learn more about Rock Paper Scissors, check out
+  = succeed "." do
+    %a{:href => "https://en.wikipedia.org/wiki/Rock-paper-scissors"}
+      the Wikipedia page
+%p
+  Cool,
+  %a{:href => "/"}
+    let me play!
