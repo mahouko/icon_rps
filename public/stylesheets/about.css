@@ -58,18 +58,18 @@ ul {
 .shirt-image {
   width: 200px;
   float: left;
-  margin-top: -35px; }
+  margin-top: -45px; }
 
 .shirt-cta {
-  margin-top: 45px; }
+  margin-top: 25px; }
 
 .shirt a {
-  color: #767676; }
+  color: #838383; }
   .shirt a .shirt-cta {
     font-size: 40px;
     color: #0a70ff; }
   .shirt a:visited {
-    color: #696969; }
+    color: #838383; }
     .shirt a:visited .shirt-cta {
       color: #0a70ff; }
   .shirt a:hover {
