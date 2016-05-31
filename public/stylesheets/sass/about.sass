@@ -1,4 +1,5 @@
 @import "common"
+@import "colors"
 
 body
   background-color: #454545
@@ -10,7 +11,7 @@ body
 h1, h2
   color: white
   clear: both
-
+  
 a
   text-decoration: none
   color: white
@@ -18,8 +19,6 @@ a
     color: white
   &:hover
     color: #6a6a6a
-
-/* For about page
 
 .wrapper
   width: 60%
@@ -47,3 +46,31 @@ p
 
 ul
   clear: both
+
+.shirt
+  font-size: 40px
+  background-color: darken($grey, 18)
+  border-radius: 15px
+  
+.shirt-image
+  width: 200px
+  float: left
+  margin-top: -35px
+  
+.shirt-cta
+  margin-top: 45px
+  
+.shirt a
+  color: lighten($grey, 5)
+  .shirt-cta
+    font-size: 40px
+    color: $blue
+  &:visited
+    color: $grey
+    .shirt-cta
+      color: $blue
+  &:hover
+    color: darken($grey, 11)
+    .shirt-cta
+      color: darken($blue, 11)
+    

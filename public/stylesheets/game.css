@@ -65,7 +65,7 @@ a {
   color: #f6cd46; }
 
 .player-hand {
-  color: #0f69fa; }
+  color: #0a70ff; }
 
 .ai-hand {
   float: right; }
@@ -94,14 +94,14 @@ a {
   margin: 0 0.25em; }
   #input .fa:hover {
     transition: color 0.2s ease-out;
-    color: #0f69fa; }
+    color: #0a70ff; }
 
 /*Animations */
 @keyframes highlightChoice {
   from {
     color: #696969; }
   to {
-    color: #0f69fa; } }
+    color: #0a70ff; } }
 /*------------------
  *  Results
  *------------------ */
@@ -134,7 +134,7 @@ a {
   text-align: right; }
 
 #player-score .fa {
-  color: #0f69fa; }
+  color: #0a70ff; }
 
 #ai-score .fa {
   color: #f6cd46; }
