@@ -7,8 +7,9 @@
   font-size: 26px; }
 
 body {
-  background-color: #424242;
-  background: linear-gradient(to bottom, #424242, #292929 800px, #292929 100%); }
+  background-color: #454545;
+  background: linear-gradient(to bottom, #454545, #383838 800px, #383838 100%);
+  background-size: 100% 200%; }
 
 html {
   height: 100%; }

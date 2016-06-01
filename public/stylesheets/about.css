@@ -5,8 +5,9 @@
   font-size: 26px; }
 
 body {
-  background-color: #424242;
-  background: linear-gradient(to bottom, #424242, #292929 800px, #292929 100%); }
+  background-color: #454545;
+  background: linear-gradient(to bottom, #454545, #383838 800px, #383838 100%);
+  background-size: 100% 200%; }
 
 body {
   height: 100%;
@@ -159,7 +160,7 @@ ul {
    * not supported by any browser */ }
 
 .shirt {
-  background-color: #3c3c3c;
+  background-color: #3f3f3f;
   border-radius: 15px; }
 
 .shirt-image {
