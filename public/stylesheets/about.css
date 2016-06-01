@@ -5,9 +5,7 @@
   font-size: 26px; }
 
 body {
-  background-color: #4a4a4a;
-  background: linear-gradient(to bottom, #454545, #383838 800px, #383838 100%);
-  background-size: 100% 200%; }
+  background-color: #454545; }
 
 body {
   height: 100%;
