@@ -160,6 +160,11 @@ ul {
   background-color: #3c3c3c;
   border-radius: 15px; }
 
+.shirt-image {
+  width: 200px;
+  float: left;
+  margin-top: -45px; }
+
 .shirt-cta {
   margin-top: 25px; }
 
