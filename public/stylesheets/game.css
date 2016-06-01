@@ -151,6 +151,43 @@ a {
 .score {
   color: #696969; }
 
+@-webkit-keyframes result-flash {
+  0% {
+    -webkit-transform: scale(15, 15) translate3d(0, 0px, 0);
+    opacity: 0; }
+  100% {
+    -webkit-transform: scale(4, 4) translate3d(0, 0, 0);
+    opacity: 1; } }
+@-moz-keyframes result-flash {
+  0% {
+    -moz-transform: scale(15, 15) translate3d(0, 0px, 0);
+    opacity: 0; }
+  100% {
+    -moz-transform: scale(4, 4) translate3d(0, 0, 0);
+    opacity: 1; } }
+@keyframes result-flash {
+  0% {
+    transform: scale(15, 15) translate3d(0, 0px, 0);
+    opacity: 0; }
+  100% {
+    transform: scale(4, 4) translate3d(0, 0, 0);
+    opacity: 1; } }
+.result-symbol {
+  opacity: 0;
+  font-size: 24px;
+  -webkit-animation: result-flash 0.45s 1;
+  -moz-animation: result-flash 0.45s 1;
+  animation: result-flash 0.15s 1;
+  -webkit-animation-delay: 0.23s;
+  -moz-animation-delay: 0.23s;
+  animation-delay: 0.23s;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
 /*------------------
  *  Throw Animation
  *------------------ */
@@ -170,7 +207,6 @@ a {
   transition: padding-right 0.45s ease-in-out;
   padding-right: 0; }
 
-/* safari and chrome */
 @-webkit-keyframes player-wiggle {
   0% {
     -webkit-transform: rotate(86deg); }
@@ -178,7 +214,6 @@ a {
     -webkit-transform: rotate(94deg); }
   100% {
     -webkit-transform: rotate(86deg); } }
-/* firefox */
 @-moz-keyframes player-wiggle {
   0% {
     -moz-transform: rotate(86deg); }
@@ -186,7 +221,6 @@ a {
     -moz-transform: rotate(94deg); }
   100% {
     -moz-transform: rotate(86deg); } }
-/* anyone brave enough to implement the ideal method */
 @keyframes player-wiggle {
   0% {
     transform: rotate(86deg); }
@@ -194,7 +228,6 @@ a {
     transform: rotate(94deg); }
   100% {
     transform: rotate(86deg); } }
-/* safari and chrome */
 @-webkit-keyframes ai-wiggle {
   0% {
     -webkit-transform: rotate(-86deg); }
@@ -202,7 +235,6 @@ a {
     -webkit-transform: rotate(-94deg); }
   100% {
     -webkit-transform: rotate(-86deg); } }
-/* firefox */
 @-moz-keyframes ai-wiggle {
   0% {
     -moz-transform: rotate(-86deg); }
@@ -210,7 +242,6 @@ a {
     -moz-transform: rotate(-94deg); }
   100% {
     -moz-transform: rotate(-86deg); } }
-/* anyone brave enough to implement the ideal method */
 @keyframes ai-wiggle {
   0% {
     transform: rotate(-86deg) scale(-1, 1); }

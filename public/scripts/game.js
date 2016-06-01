@@ -14,9 +14,11 @@ $(document).ready(function() {
   var playerScissors ="<i id=\"input-scissors\" class=\"fa fa-hand-scissors-o fa-5x rotate-180-flip player-hand\" aria-hidden=\"true\"></i>"
   var playerLizard ="<i id=\"input-lizard\" class=\"fa fa-hand-lizard-o fa-5x rotate-180-flip player-hand\" aria-hidden=\"true\"></i>"
   var playerSpock ="<i id=\"input-spock\" class=\"fa fa-hand-spock-o fa-5x rotate-180-flip player-hand\" aria-hidden=\"true\"></i>"
-  var winSymbol = "<i class=\"fa fa-check win\" fa-3x aria-hidden=\"true\"></i>"
-  var loseSymbol = "<i class=\"fa fa-times lose\" aria-hidden=\"true\"></i>"
-  var tieSymbol = "<i class=\"fa fa-undo tie\" aria-hidden=\"true\"></i>"
+  
+  var winSymbol = "<i class=\"fa fa-check win result-symbol\" fa-3x aria-hidden=\"true\"></i>"
+  var loseSymbol = "<i class=\"fa fa-times lose result-symbol\" aria-hidden=\"true\"></i>"
+  var tieSymbol = "<i class=\"fa fa-undo tie result-symbol\" aria-hidden=\"true\"></i>"
+  
   var canThrow = true;
   
   var playerScore = 0
@@ -83,12 +85,12 @@ $(document).ready(function() {
     
     resultCode=(gameMode+playerChoice - aiChoice) % gameMode
     if (resultCode==0) {
-      $("#result-row").html(tieSymbol + spaces + tieSymbol)
+      $("#result-row").html(tieSymbol)
     } else if (resultCode%2==1) {
-      $("#result-row").html(winSymbol + spaces + loseSymbol)
+      $("#result-row").html(winSymbol)
       playerScore++
     } else if (resultCode%2==0) {
-      $("#result-row").html(loseSymbol + spaces + winSymbol)
+      $("#result-row").html(loseSymbol)
       aiScore++
     }
     $("#player-score").html(booty(playerScore, true))
