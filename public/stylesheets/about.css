@@ -5,7 +5,7 @@
   font-size: 26px; }
 
 body {
-  background-color: #454545; }
+  background-color: #424242; }
 
 body {
   color: white;
@@ -52,30 +52,162 @@ p {
 ul {
   clear: both; }
 
+/*------------------
+ *  Throw Animation
+ *------------------ */
+.player-throw {
+  transition: padding-left 0.13s ease-in;
+  padding-left: 20%; }
+
+.ai-throw {
+  transition: padding-right 0.13s ease-in;
+  padding-right: 20%; }
+
+.player-return {
+  transition: padding-left 0.45s ease-in-out;
+  padding-left: 0; }
+
+.ai-return {
+  transition: padding-right 0.45s ease-in-out;
+  padding-right: 0; }
+
+/* safari and chrome */
+@-webkit-keyframes player-wiggle {
+  0% {
+    -webkit-transform: rotate(86deg); }
+  50% {
+    -webkit-transform: rotate(94deg); }
+  100% {
+    -webkit-transform: rotate(86deg); } }
+/* firefox */
+@-moz-keyframes player-wiggle {
+  0% {
+    -moz-transform: rotate(86deg); }
+  50% {
+    -moz-transform: rotate(94deg); }
+  100% {
+    -moz-transform: rotate(86deg); } }
+/* anyone brave enough to implement the ideal method */
+@keyframes player-wiggle {
+  0% {
+    transform: rotate(86deg); }
+  50% {
+    transform: rotate(94deg); }
+  100% {
+    transform: rotate(86deg); } }
+/* safari and chrome */
+@-webkit-keyframes ai-wiggle {
+  0% {
+    -webkit-transform: rotate(-86deg); }
+  50% {
+    -webkit-transform: rotate(-94deg); }
+  100% {
+    -webkit-transform: rotate(-86deg); } }
+/* firefox */
+@-moz-keyframes ai-wiggle {
+  0% {
+    -moz-transform: rotate(-86deg); }
+  50% {
+    -moz-transform: rotate(-94deg); }
+  100% {
+    -moz-transform: rotate(-86deg); } }
+/* anyone brave enough to implement the ideal method */
+@keyframes ai-wiggle {
+  0% {
+    transform: rotate(-86deg) scale(-1, 1); }
+  50% {
+    transform: rotate(-94deg) scale(-1, 1); }
+  100% {
+    transform: rotate(-86deg) scale(-1, 1); } }
+.player-wiggle {
+  -webkit-animation: player-wiggle 0.25s 2;
+  -moz-animation: player-wiggle 0.25s 2;
+  animation: player-wiggle 0.25s 2; }
+
+.ai-wiggle {
+  -webkit-animation: ai-wiggle 0.25s 2;
+  -moz-animation: ai-wiggle 0.25s 2;
+  animation: ai-wiggle 0.25s 2; }
+
+.rotate-270-flip {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3) progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: rotate(270deg) scale(-1, 1);
+  -ms-transform: rotate(270deg) scale(-1, 1);
+  transform: rotate(270deg) scale(-1, 1); }
+
+.rotate-180-flip {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2) progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: rotate(180deg) scale(1, -1);
+  -ms-transform: rotate(180deg) scale(1, -1);
+  transform: rotate(180deg) scale(1, -1); }
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+   * not supported by any browser */ }
+
 .shirt {
-  background-color: #4a4a4a;
+  background-color: #3c3c3c;
   border-radius: 15px; }
 
+/* safari and chrome */
+@-webkit-keyframes shirt-wiggle {
+  0% {
+    -webkit-transform: rotate(4deg); }
+  50% {
+    -webkit-transform: rotate(-4deg); }
+  100% {
+    -webkit-transform: rotate(4deg); } }
+/* firefox */
+@-moz-keyframes shirt-wiggle {
+  0% {
+    -moz-transform: rotate(4deg); }
+  50% {
+    -moz-transform: rotate(4deg); }
+  100% {
+    -moz-transform: rotate(4deg); } }
+/* anyone brave enough to implement the ideal method */
+@keyframes shirt-wiggle {
+  0% {
+    transform: rotate(4deg); }
+  50% {
+    transform: rotate(-4deg); }
+  100% {
+    transform: rotate(4deg); } }
 .shirt-image {
   width: 200px;
   float: left;
   margin-top: -45px; }
+  .shirt-image:hover {
+    -webkit-animation: shirt-wiggle 0.25s 2;
+    -moz-animation: shirt-wiggle 0.25s 2;
+    animation: shirt-wiggle 0.25s 2; }
 
 .shirt-cta {
   margin-top: 25px; }
 
 .shirt a {
-  color: #8a8a8a; }
+  color: #888888; }
   .shirt a .shirt-cta {
     color: #0a70ff; }
   .shirt a:visited {
-    color: #8a8a8a; }
+    color: #888888; }
     .shirt a:visited .shirt-cta {
       color: #0a70ff; }
   .shirt a:hover {
-    color: #646464; }
+    color: #6a6a6a; }
     .shirt a:hover .shirt-cta {
-      color: #0057d1; }
+      color: #0064f0; }
 
 @media screen and (max-width: 1223px) and (orientation: portrait) {
   .shirt {
