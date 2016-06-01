@@ -5,7 +5,7 @@
   font-size: 26px; }
 
 body {
-  background-color: #454545;
+  background-color: #4a4a4a;
   background: linear-gradient(to bottom, #454545, #383838 800px, #383838 100%);
   background-size: 100% 200%; }
 
@@ -74,7 +74,6 @@ ul {
   transition: padding-right 0.45s ease-in-out;
   padding-right: 0; }
 
-/* safari and chrome */
 @-webkit-keyframes player-wiggle {
   0% {
     -webkit-transform: rotate(86deg); }
@@ -82,7 +81,6 @@ ul {
     -webkit-transform: rotate(94deg); }
   100% {
     -webkit-transform: rotate(86deg); } }
-/* firefox */
 @-moz-keyframes player-wiggle {
   0% {
     -moz-transform: rotate(86deg); }
@@ -90,7 +88,6 @@ ul {
     -moz-transform: rotate(94deg); }
   100% {
     -moz-transform: rotate(86deg); } }
-/* anyone brave enough to implement the ideal method */
 @keyframes player-wiggle {
   0% {
     transform: rotate(86deg); }
@@ -98,7 +95,6 @@ ul {
     transform: rotate(94deg); }
   100% {
     transform: rotate(86deg); } }
-/* safari and chrome */
 @-webkit-keyframes ai-wiggle {
   0% {
     -webkit-transform: rotate(-86deg); }
@@ -106,7 +102,6 @@ ul {
     -webkit-transform: rotate(-94deg); }
   100% {
     -webkit-transform: rotate(-86deg); } }
-/* firefox */
 @-moz-keyframes ai-wiggle {
   0% {
     -moz-transform: rotate(-86deg); }
@@ -114,7 +109,6 @@ ul {
     -moz-transform: rotate(-94deg); }
   100% {
     -moz-transform: rotate(-86deg); } }
-/* anyone brave enough to implement the ideal method */
 @keyframes ai-wiggle {
   0% {
     transform: rotate(-86deg) scale(-1, 1); }
