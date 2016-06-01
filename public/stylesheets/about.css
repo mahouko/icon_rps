@@ -5,15 +5,7 @@
   font-size: 26px; }
 
 body {
-  background-color: #454545;
-  background: -webkit-repeating-linear-gradient(-45deg, #424242, #424242 20px, #363636 24px, #424242 26px);
-  background: -o-repeating-linear-gradient(-45deg, #424242, #424242 20px, #363636 24px, #424242 26px);
-  background: -moz-repeating-linear-gradient(-45deg, #424242, #424242 20px, #363636 24px, #424242 26px);
-  background: repeating-linear-gradient(-45deg, #424242, #424242 20px, #363636 24px, #424242 26px);
-  -webkit-background-size: 2000px 2000px;
-  -o-background-size: 2000px 2000px;
-  -moz-background-size: 2000px 2000px;
-  background-size: 2000px 2000px; }
+  background-color: #454545; }
 
 body {
   color: white;
@@ -61,7 +53,7 @@ ul {
   clear: both; }
 
 .shirt {
-  background-color: #3d3d3d;
+  background-color: #4a4a4a;
   border-radius: 15px; }
 
 .shirt-image {
@@ -73,15 +65,15 @@ ul {
   margin-top: 25px; }
 
 .shirt a {
-  color: #7d7d7d; }
+  color: #8a8a8a; }
   .shirt a .shirt-cta {
     color: #0a70ff; }
   .shirt a:visited {
-    color: #7d7d7d; }
+    color: #8a8a8a; }
     .shirt a:visited .shirt-cta {
       color: #0a70ff; }
   .shirt a:hover {
-    color: #575757; }
+    color: #646464; }
     .shirt a:hover .shirt-cta {
       color: #0057d1; }
 
