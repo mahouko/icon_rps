@@ -160,39 +160,6 @@ ul {
   background-color: #3c3c3c;
   border-radius: 15px; }
 
-/* safari and chrome */
-@-webkit-keyframes shirt-wiggle {
-  0% {
-    -webkit-transform: rotate(4deg); }
-  50% {
-    -webkit-transform: rotate(-4deg); }
-  100% {
-    -webkit-transform: rotate(4deg); } }
-/* firefox */
-@-moz-keyframes shirt-wiggle {
-  0% {
-    -moz-transform: rotate(4deg); }
-  50% {
-    -moz-transform: rotate(4deg); }
-  100% {
-    -moz-transform: rotate(4deg); } }
-/* anyone brave enough to implement the ideal method */
-@keyframes shirt-wiggle {
-  0% {
-    transform: rotate(4deg); }
-  50% {
-    transform: rotate(-4deg); }
-  100% {
-    transform: rotate(4deg); } }
-.shirt-image {
-  width: 200px;
-  float: left;
-  margin-top: -45px; }
-  .shirt-image:hover {
-    -webkit-animation: shirt-wiggle 0.25s 2;
-    -moz-animation: shirt-wiggle 0.25s 2;
-    animation: shirt-wiggle 0.25s 2; }
-
 .shirt-cta {
   margin-top: 25px; }
 
