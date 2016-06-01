@@ -5,7 +5,15 @@
   font-size: 26px; }
 
 body {
-  background-color: #454545; }
+  background-color: #454545;
+  background: -webkit-repeating-linear-gradient(-45deg, #424242, #424242 20px, #363636 24px, #424242 26px);
+  background: -o-repeating-linear-gradient(-45deg, #424242, #424242 20px, #363636 24px, #424242 26px);
+  background: -moz-repeating-linear-gradient(-45deg, #424242, #424242 20px, #363636 24px, #424242 26px);
+  background: repeating-linear-gradient(-45deg, #424242, #424242 20px, #363636 24px, #424242 26px);
+  -webkit-background-size: 2000px 2000px;
+  -o-background-size: 2000px 2000px;
+  -moz-background-size: 2000px 2000px;
+  background-size: 2000px 2000px; }
 
 body {
   color: white;
