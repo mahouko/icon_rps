@@ -5,13 +5,18 @@
   font-size: 26px; }
 
 body {
-  background-color: #454545;
+  background-color: #4a4a4a;
+  background: linear-gradient(to bottom, #454545, #383838 800px, #383838 100%);
+  background-size: 100% 200%; }
+
+body {
+  height: 100%;
   color: white;
   font-family: "Arvo", sans;
   font-size: 100%;
   padding: 0 30px; }
 
-h1, h2 {
+h1, h2, h3 {
   color: white;
   clear: both; }
 
@@ -23,7 +28,6 @@ a {
   a:hover {
     color: #6a6a6a; }
 
-/* For about page */
 .wrapper {
   width: 60%;
   margin: 0 auto;
@@ -43,12 +47,162 @@ a {
   color: #fe4747; }
 
 .blue {
-  color: #4667f7; }
+  color: #0a70ff; }
 
 p {
   word-wrap: break-word; }
 
 ul {
   clear: both; }
+
+/*------------------
+ *  Throw Animation
+ *------------------ */
+.player-throw {
+  transition: padding-left 0.13s ease-in;
+  padding-left: 20%; }
+
+.ai-throw {
+  transition: padding-right 0.13s ease-in;
+  padding-right: 20%; }
+
+.player-return {
+  transition: padding-left 0.45s ease-in-out;
+  padding-left: 0; }
+
+.ai-return {
+  transition: padding-right 0.45s ease-in-out;
+  padding-right: 0; }
+
+@-webkit-keyframes player-wiggle {
+  0% {
+    -webkit-transform: rotate(86deg); }
+  50% {
+    -webkit-transform: rotate(94deg); }
+  100% {
+    -webkit-transform: rotate(86deg); } }
+@-moz-keyframes player-wiggle {
+  0% {
+    -moz-transform: rotate(86deg); }
+  50% {
+    -moz-transform: rotate(94deg); }
+  100% {
+    -moz-transform: rotate(86deg); } }
+@keyframes player-wiggle {
+  0% {
+    transform: rotate(86deg); }
+  50% {
+    transform: rotate(94deg); }
+  100% {
+    transform: rotate(86deg); } }
+@-webkit-keyframes ai-wiggle {
+  0% {
+    -webkit-transform: rotate(-86deg); }
+  50% {
+    -webkit-transform: rotate(-94deg); }
+  100% {
+    -webkit-transform: rotate(-86deg); } }
+@-moz-keyframes ai-wiggle {
+  0% {
+    -moz-transform: rotate(-86deg); }
+  50% {
+    -moz-transform: rotate(-94deg); }
+  100% {
+    -moz-transform: rotate(-86deg); } }
+@keyframes ai-wiggle {
+  0% {
+    transform: rotate(-86deg) scale(-1, 1); }
+  50% {
+    transform: rotate(-94deg) scale(-1, 1); }
+  100% {
+    transform: rotate(-86deg) scale(-1, 1); } }
+.player-wiggle {
+  -webkit-animation: player-wiggle 0.25s 2;
+  -moz-animation: player-wiggle 0.25s 2;
+  animation: player-wiggle 0.25s 2; }
+
+.ai-wiggle {
+  -webkit-animation: ai-wiggle 0.25s 2;
+  -moz-animation: ai-wiggle 0.25s 2;
+  animation: ai-wiggle 0.25s 2; }
+
+.rotate-270-flip {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3) progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: rotate(270deg) scale(-1, 1);
+  -ms-transform: rotate(270deg) scale(-1, 1);
+  transform: rotate(270deg) scale(-1, 1); }
+
+.rotate-180-flip {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2) progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: rotate(180deg) scale(1, -1);
+  -ms-transform: rotate(180deg) scale(1, -1);
+  transform: rotate(180deg) scale(1, -1); }
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+   * not supported by any browser */ }
+
+.shirt {
+  background-color: #3f3f3f;
+  border-radius: 15px; }
+
+.shirt-image {
+  width: 200px;
+  float: left;
+  margin-top: -45px; }
+
+.shirt-cta {
+  margin-top: 25px; }
+
+.shirt a {
+  color: #888888; }
+  .shirt a .shirt-cta {
+    color: #0a70ff; }
+  .shirt a:visited {
+    color: #888888; }
+    .shirt a:visited .shirt-cta {
+      color: #0a70ff; }
+  .shirt a:hover {
+    color: #6a6a6a; }
+    .shirt a:hover .shirt-cta {
+      color: #0064f0; }
+
+@media screen and (max-width: 1223px) and (orientation: portrait) {
+  .shirt {
+    font-size: 16px; }
+
+  .shirt a .shirt-cta {
+    font-size: 24px; }
+
+  .shirt-image {
+    width: 100px;
+    margin-top: -20px; } }
+@media screen and (max-width: 1223px) and (orientation: landscape) {
+  .shirt {
+    font-size: 20px; }
+
+  .shirt a .shirt-cta {
+    font-size: 30px; }
+
+  .shirt-image {
+    width: 100px;
+    margin-top: -20px; } }
+@media screen and (min-width: 1224px) {
+  .shirt {
+    font-size: 25px; }
+
+  .shirt a .shirt-cta {
+    font-size: 40px; } }
 
 /*# sourceMappingURL=about.css.map */

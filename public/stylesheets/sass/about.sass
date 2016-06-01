@@ -1,30 +1,33 @@
 @import "common"
+@import "colors"
+@import "bg"
+
+html
+  // height: 100%
 
 body
-  background-color: #454545
+  height: 100%
   color: white
   font-family: "Arvo", sans
   font-size: 100%
   padding: 0 30px
 
-h1, h2
+h1, h2, h3
   color: white
   clear: both
-
+  
 a
   text-decoration: none
   color: white
   &:visited
     color: white
   &:hover
-    color: #6a6a6a
-
-/* For about page
+    color: $linkHover
 
 .wrapper
   width: 60%
   margin: 0 auto
-  color: #888888
+  color: $aboutText
   font-size: 32px
 
 .white
@@ -40,10 +43,19 @@ a
   color: #fe4747
 
 .blue
-  color: #4667f7
+  color: $blue
 
 p
   word-wrap: break-word
 
 ul
   clear: both
+
+@import "jazz_hands"
+@import "ad"
+@media screen and (max-width: 1223px) and (orientation: portrait)
+  @import "ad_phone_p"
+@media screen and (max-width: 1223px) and (orientation: landscape)
+  @import "ad_phone_l"
+@media screen and (min-width: 1224px)
+  @import "ad_monitor"

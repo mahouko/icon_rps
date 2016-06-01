@@ -7,12 +7,20 @@
   font-size: 26px; }
 
 body {
-  background-color: #454545;
+  background-color: #4a4a4a;
+  background: linear-gradient(to bottom, #454545, #383838 800px, #383838 100%);
+  background-size: 100% 200%; }
+
+html {
+  height: 100%; }
+
+body {
+  height: 100%;
   color: white;
   font-family: "Arvo", sans;
   padding: 0 30px; }
 
-h1, h2 {
+h1, h2, h3 {
   color: white; }
 
 a {
@@ -65,7 +73,7 @@ a {
   color: #f6cd46; }
 
 .player-hand {
-  color: #0f69fa; }
+  color: #0a70ff; }
 
 .ai-hand {
   float: right; }
@@ -94,14 +102,14 @@ a {
   margin: 0 0.25em; }
   #input .fa:hover {
     transition: color 0.2s ease-out;
-    color: #0f69fa; }
+    color: #0a70ff; }
 
 /*Animations */
 @keyframes highlightChoice {
   from {
     color: #696969; }
   to {
-    color: #0f69fa; } }
+    color: #0a70ff; } }
 /*------------------
  *  Results
  *------------------ */
@@ -134,7 +142,7 @@ a {
   text-align: right; }
 
 #player-score .fa {
-  color: #0f69fa; }
+  color: #0a70ff; }
 
 #ai-score .fa {
   color: #f6cd46; }

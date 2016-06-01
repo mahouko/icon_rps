@@ -46,7 +46,7 @@ run lambda { |env|
     end
   end
   
-  regex = /(about|rules)(\.html)?$/
+  regex = /(about|rules|shirt)(\.html)?$/
   if regex.match(path) 
     path = regex.match(path)[1]
     
