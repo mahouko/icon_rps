@@ -7,6 +7,16 @@
     %link{:charset => "utf-8", :href => "stylesheets/about.css", :rel => "stylesheet"}
     %link{:href => "images/favicon.ico", :rel => "apple-touch-icon"}
     %link{:href => "images/favicon.ico", :rel => "icon"}
+
+    :javascript
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-78731010-1', 'auto');
+      ga('send', 'pageview');
+
   %body
     #title
       %a{:href => "/"}
@@ -19,9 +29,9 @@
           %i.fa.fa-font-awesome.big{"aria-hidden" => "true"}
         %a{href: "http://maxcdn.com"}
           %i.fa.fa-maxcdn.big{"aria-hidden" => "true"}
-        
+
     .wrapper
-    
+
       %p
         %a{href: "http://amzn.to/1WXuSAc"}
           .shirt
@@ -34,7 +44,7 @@
               shirt
             %p{style: "margin-top: 6px;"}
               support this project and Font Awesome!
-    
+
       = yield
-    
+
     %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"}
